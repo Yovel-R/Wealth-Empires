@@ -821,12 +821,42 @@
                 <div class="logo-section">
                     <img src="Wealth Empires.jpg" alt="Wealth Empires" class="footer-logo">
                 </div>
-                <div class="header-divider"></div>
-                <div class="contact-section">
-                    <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
+                <div class="header-divider">
+                    <div class="contact-section">
+                        <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
+                    </div>
+                    <div class="mail-support">
+                        <a href="mailto:support@wealthempires.in" class="support-email">
+                            support@wealthempires.in
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <style>
+                .header-divider {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+    /* Tablet and smaller */
+    @media (max-width: 768px) {
+        .header-divider {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+        .header-divider {
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+    }
+
+        </style>
 
         <div class="footer-content">
             <div class="footer-column">

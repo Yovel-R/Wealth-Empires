@@ -144,6 +144,7 @@
         }
 
         .hero-content {
+            margin-top: 5rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 80px;
@@ -1829,15 +1830,15 @@
                     <!-- Full-cover decorative background image (img/fa3.png) - behind content, covers card and respects rounded corners -->
                     <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none we-card-bg" aria-hidden="true">
                         <!-- make image clearer: increase brightness and reduce overlay darkness -->
-                        <img src="fa3.png" alt="" class="w-full h-full object-cover" style="filter:brightness(0.92);" />
+                        <img src="img/Build your dream.webp" alt="" class="w-full h-full object-cover" style="filter:brightness(0.92);" />
                         <!-- lighter dark gradient overlay to improve visibility of the image while keeping text readable -->
-                        <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.28));"></div>
+                        <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0, 0, 0, 0.057));"></div>
                     </div>
 
                     <!-- Content -->
                     <div class="relative z-10 card-content">
-                        <h3 class="text-xl lg:text-2xl font-bold mb-2 text-white">Do It With Wealth Empires</h3>
-                        <p class="mb-4 leading-relaxed text-sm lg:text-base text-gray-200">Build your dream. We'll handle the rest.</p>
+                        <h3 class="text-xl lg:text-2xl font-bold mb-2 text-white" style="color: white !important;">Do It With Wealth Empires</h3>
+                        <p class="mb-4 leading-relaxed text-sm lg:text-base text-gray-200" style="color: white !important;">Build your dream. We'll handle the rest.</p>
 
                         <a href="https://crm.wealthempires.in/" class="inline-flex animation-blocker items-center text-sm font-semibold text-white hover:text-gray-200 transition-colors group" style="pointer-events: none;">
                             Create a Free Account
@@ -1855,15 +1856,15 @@
                     <!-- Full-cover decorative background image (img/fa3.png) - behind content, covers card and respects rounded corners -->
                     <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none we-card-bg" aria-hidden="true">
                         <!-- make image clearer: increase brightness and reduce overlay darkness -->
-                        <img src="fa1.png" alt="" class="w-full h-full object-cover" style="filter:brightness(0.92);" />
+                        <img src="img/comapre.webp" alt="" class="w-full h-full object-cover" style="filter:brightness(0.92);" />
                         <!-- lighter dark gradient overlay to improve visibility of the image while keeping text readable -->
                         <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.28));"></div>
                     </div>
 
                     <!-- Content -->
                     <div class="relative z-10 card-content">
-                        <h3 class="text-xl lg:text-2xl font-bold mb-2 text-white">Do it Yourself</h3>
-                        <p class="mb-4 leading-relaxed text-sm lg:text-base text-gray-200">Going solo? See how we compare.</p>
+                        <h3 class="text-xl lg:text-2xl font-bold mb-2 text-white" style="color: white !important;">Do it Yourself</h3><br>
+                        <p class="mb-4 leading-relaxed text-sm lg:text-base text-gray-200" style="color: white !important;">Going solo? See how we compare.</p>
 
                         <a href="compareempires.html" class="inline-flex items-center text-sm font-semibold text-white hover:text-gray-200 transition-colors group">
                             Compare
@@ -2126,246 +2127,435 @@
     </script>
 
     <!-- Testimonial Section -->
-    <section class="testimonial-hero-section " style="margin: 24px 24px 8px 24px; padding: 60px 0; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
-        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <section class="testimonial-hero-section " style="padding: 60px 0; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
+        <div class="containers-testiminial" style="max-width: 600rem!important; margin: 0 auto; padding: 0 20px;">
             <!-- Header with Awards -->
-            <div class="testimonial-header" style="position: relative; margin-bottom: 60px;">
-                <!-- Awards Badges - Moved to top right -->
-                <div class="awards-container" style="position: absolute; top: 0; right: 0; display: flex; gap: 20px; flex-wrap: wrap; z-index: 5;">
-                    <!-- Badge 1 -->
-                    <div class="award-badge" style="text-align: center; background: none; border: none; padding: 0;">
-                        <img src="img/was2.jpg" alt="Award Badge 1" style="width: 70px; height: auto; object-fit: contain;border-radius: 12px;">
+            <section class="testimonial-hero-section">
+                <div class="containers-testimonial">
+                    <div class="testimonial-header">
+                    <div class="awards-container">
+                        <div class="award-badge">
+                        <img src="img/was2.jpg" alt="Award Badge 1">
+                        </div>
+                        <div class="award-badge">
+                        <img src="img/was1.jpg" alt="Award Badge 2">
+                        </div>
+                        <div class="award-badge">
+                        <img src="img/was.jpg" alt="Award Badge 3">
+                        </div>
+                        <div class="award-badge">
+                        <img src="img/b1as.png" alt="Award Badge 4">
+                        </div>
                     </div>
-                    
-                    <!-- Badge 2 -->
-                    <div class="award-badge" style="text-align: center; background: none; border: none; padding: 0;">
-                        <img src="img/was1.jpg" alt="Award Badge 2" style="width: 70px; height: auto; object-fit: contain; border-radius: 12px;">
-                    </div>
-                    
-                    <!-- Badge 3 -->
-                    <div class="award-badge" style="text-align: center; background: none; border: none; padding: 0;">
-                        <img src="img/was.jpg" alt="Award Badge 3" style="width: 70px; height: auto; object-fit: contain; border-radius: 12px;">
-                    </div>
-                    
-                    <!-- Badge 4 -->
-                    <div class="award-badge" style="text-align: center; background: none; border: none; padding: 0;">
-                        <img src="img/b1as.png" alt="Award Badge 4" style="width: 70px; height: auto; object-fit: contain; border-radius: 12px;">
+
+                    <h1 class="testimonial-title">
+                        <span class="purple">Superheroes</span> <span>who</span><br>
+                        <span>trust</span> <span>WealthEmpires</span>
+                    </h1>
                     </div>
                 </div>
+                </section>
 
-                <h1 class="testimonial-title" style="font-size: 3.5rem; font-weight: 600; margin: 0 0 40px 0; line-height: 1.1; text-align: left;">
-                    <span style="color: #7851A9;">Superheroes</span> <span style="color: #1f2937;">who</span><br>
-                    <span style="color: #1f2937;">trust</span> <span style="color: #1f2937;">WealthEmpires</span>
-                </h1>
-            </div>
+                <style>
+                    .testimonial-hero-section {
+                        /* margin: 24px 24px 8px 24px; */
+                        /* padding: 60px 0; */
+                        background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+                        }
+
+                        .containers-testimonial {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 0 20px;
+                        }
+
+                        .testimonial-header {
+                        position: relative;
+                        margin-bottom: 60px;
+                        }
+
+                        .awards-container {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        display: flex;
+                        gap: 20px;
+                        flex-wrap: wrap;
+                        z-index: 5;
+                        }
+
+                        .award-badge {
+                        text-align: center;
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        }
+
+                        .award-badge img {
+                        width: 70px;
+                        height: auto;
+                        object-fit: contain;
+                        border-radius: 12px;
+                        }
+
+                        .testimonial-title {
+                        font-size: 3.5rem;
+                        font-weight: 600;
+                        margin: 0 0 40px 0;
+                        line-height: 1.1;
+                        text-align: left;
+                        }
+
+                        .testimonial-title .purple {
+                        color: #7851A9;
+                        }
+
+                        /* Tablet */
+                        @media (max-width: 992px) {
+                        .testimonial-hero-section {
+                            margin: 24px 16px 8px 16px;
+                            padding: 40px 0;
+                        }
+
+                        .testimonial-title {
+                            font-size: 2.4rem;
+                        }
+
+                        .awards-container {
+                            gap: 12px;
+                        }
+
+                        .award-badge img {
+                            width: 60px;
+                        }
+                        }
+
+                        /* Mobile */
+                        @media (max-width: 768px) {
+                        .testimonial-hero-section {
+                            margin: 16px 12px 0 12px;
+                            padding: 32px 0;
+                        }
+
+                        .testimonial-header {
+                            margin-bottom: 32px;
+                        }
+
+                        .testimonial-title {
+                            font-size: 2rem;
+                            text-align: center;
+                        }
+
+                        .awards-container {
+                            position: static;
+                            justify-content: center;
+                            margin-bottom: 16px;
+                        }
+                        }
+
+                        /* Small mobile */
+                        @media (max-width: 480px) {
+                        .testimonial-title {
+                            font-size: 1.7rem;
+                        }
+
+                        .award-badge img {
+                            width: 52px;
+                        }
+                        }
+
+                </style>
+
 
             <!-- Testimonial Cards -->
-            <div class="testimonial-grid" style="display: grid; grid-template-columns: 200px 200px 400px 200px; gap: 20px; align-items: stretch; justify-content: center;">
-                
-                
-                
-                
-                <!-- Customer Photo 1 -->
-                <div class="customer-card hover-testimonial" style="background: #ffc0cb; border-radius: 25px; padding: 0; overflow: hidden; height: 280px; position: relative; cursor: pointer;">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" alt="Steven Rumancik" style="width: 100%; height: 100%; object-fit: cover; transition: all 0.3s ease;">
-                    
-                    <!-- Hover Overlay with Testimonial -->
-                    <div class="testimonial-overlay" style="position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; background: rgba(255, 192, 203, 0.95) !important; padding: 30px !important; display: flex !important; flex-direction: column !important; justify-content: center !important; text-align: center !important; border-radius: 25px !important; z-index: 20 !important;">
-                        <div style="color: #e91e63; font-size: 16px; margin-bottom: 8px;">✦</div>
-                        <p style="font-size: 14px; font-weight: 600; color: #2d3748; line-height: 1.3; margin: 0 0 12px 0;">
-                            We're now operating leaner and more efficiently than ever before. WealthEmpires has truly transformed our business!
-                        </p>
-                        <div>
-                            <h4 style="font-size: 15px; font-weight: 700; color: #2d3748; margin: 0;">Steven Rumancik</h4>
-                            <p style="font-size: 12px; color: #666; margin: 3px 0 0 0;">CEO, Peak Technology</p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Testimonials Section -->
+<div class="testimonial-hero-section" >
+    <div class="container">
+        <!-- Section Header -->
+        <div class="testimonial-grid">
 
-                <!-- Customer Photo 2 -->
-                <div class="customer-card hover-testimonial" style="background: #add8e6; border-radius: 25px; padding: 0; overflow: hidden; height: 280px; position: relative; cursor: pointer;">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face" alt="Jack Marshall" style="width: 100%; height: 100%; object-fit: cover; transition: all 0.3s ease;">
-                    
-                    <!-- Hover Overlay with Testimonial -->
-                    <div class="testimonial-overlay" style="position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; background: rgba(173, 216, 230, 0.95) !important; padding: 20px !important; display: flex !important; flex-direction: column !important; justify-content: center !important; text-align: center !important; border-radius: 25px !important; z-index: 10 !important;">
-                        <div style="color: #4a90e2; font-size: 16px; margin-bottom: 8px;">✦</div>
-                        <p style="font-size: 14px; font-weight: 600; color: #2d3748; line-height: 1.3; margin: 0 0 12px 0;">
-                            One word, excellent. It's been game-changing for us. WealthEmpires has given us the confidence to grow, simplify operations, and deliver even better results for our clients.
-                        </p>
-                        <div>
-                            <h4 style="font-size: 15px; font-weight: 700; color: #2d3748; margin: 0;">Jack Marshall</h4>
-                            <p style="font-size: 12px; color: #666; margin: 3px 0 0 0;">Associate Director, Network Ltd.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- CARD 1 -->
+    <div class="customer-card" data-testimonial="1">
+        <div class="card-expanded-layout">
 
-                <!-- Featured Testimonial -->
-                <div class="featured-testimonial" style="background: linear-gradient(135deg, #d4f561 0%, #c8e6c9 100%); border-radius: 25px; padding: 30px; position: relative; height: 280px; display: flex; align-items: center;">
-                    <!-- Customer Photo with Sparkle Effect -->
-                    <div style="flex-shrink: 0; width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin-right: 20px; position: relative;">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face" alt="George Ballane" style="width: 100%; height: 100%; object-fit: cover;">
-                        
-                        <!-- Sparkle Decoration with radiating lines -->
-                        
-                        
-                        <!-- Sparkles -->
-                        <div style="position: absolute; right: -15px; top: 15%; color: #e91e63; font-size: 16px; transform: rotate(15deg);">✦</div>
-                        <div style="position: absolute; left: -15px; bottom: 20%; color: #ff6b6b; font-size: 14px; transform: rotate(-15deg);">✦</div>
-                    </div>
-                    
-                    <!-- Testimonial Content -->
-                    <div style="flex: 1;">
-                        <div style="color: #e91e63; font-size: 18px; margin-bottom: 8px;">✦</div>
-                        <p style="font-size: 16px; font-weight: 600; color: #2d3748; line-height: 1.4; margin: 0 0 15px 0;">
-                            WealthEmpires literally runs my business. We are more profitable with just a little more sales, all thanks to WealthEmpires.
-                        </p>
-                        
-                        <div>
-                            <h4 style="font-size: 16px; font-weight: 700; color: #2d3748; margin: 0;">George Ballane</h4>
-                            <p style="font-size: 13px; color: #666; margin: 3px 0 0 0;">Founder, BizTechPro</p>
-                        </div>
-                    </div>
-                </div>
+            <img class="person-img"
+                src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=500&fit=crop&crop=face"
+                alt="Testimonial Person">
 
-                <!-- Customer Photo 4 -->
-                <div class="customer-card hover-testimonial" style="background: #98fb98; border-radius: 25px; padding: 0; overflow: hidden; height: 280px; position: relative; cursor: pointer;">
-                    <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=500&fit=crop&crop=face" alt="Wes Ulmer" style="width: 100%; height: 100%; object-fit: cover; transition: all 0.3s ease;">
-                    
-                    <!-- Hover Overlay with Testimonial -->
-                    <div class="testimonial-overlay" style="position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; background: rgba(152, 251, 152, 0.95) !important; padding: 20px !important; display: flex !important; flex-direction: column !important; justify-content: center !important; text-align: center !important; border-radius: 25px !important; z-index: 10 !important;">
-                        <div style="color: #4caf50; font-size: 16px; margin-bottom: 8px;">✦</div>
-                        <p style="font-size: 14px; font-weight: 600; color: #2d3748; line-height: 1.3; margin: 0 0 12px 0;">
-                            With WealthEmpires we found a platform that integrates easily and allows for more efficient management of our projects.
-                        </p>
-                        <div>
-                            <h4 style="font-size: 15px; font-weight: 700; color: #2d3748; margin: 0;">Wes Ulmer</h4>
-                            <p style="font-size: 12px; color: #666; margin: 3px 0 0 0;">CEO and President, BD Tech</p>
-                        </div>
-                    </div>
+            <div class="right-content">
+                <div class="star">✦</div>
+
+                <p class="testimonial-text">
+                    We're now operating leaner and more efficiently than ever before.
+                    WealthEmpires has truly transformed our business!
+                </p>
+
+                <div class="author">
+                    <h4>Steven Rumancik</h4>
+                    <p>CEO, Peak Technology</p>
                 </div>
             </div>
+
         </div>
+    </div>
 
-        <!-- Hover Effects and Responsive Styles -->
-         <script>
-            document.querySelectorAll('.hover-testimonial').forEach(card => {
-                card.addEventListener('click', () => {
-                // optional: close others
-                document.querySelectorAll('.hover-testimonial')
-                    .forEach(c => c.classList.remove('active'));
+    <!-- CARD 2 -->
+    <div class="customer-card" data-testimonial="2">
+        <div class="card-expanded-layout">
 
-                // open this one
-                card.classList.add('active');
-                });
-            });
-        </script>
+            <img class="person-img"
+                src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop&crop=face"
+                alt="Testimonial Person">
 
-        <style>
-            /* Hover Effects */
-            /* .hover-testimonial:hover .testimonial-overlay {
-                opacity: 1 !important;
-                visibility: visible !important;
-            } */
-            
-            /* .hover-testimonial:hover img {
-                transform: scale(1.05) !important;
-                filter: blur(2px) !important;
-            } */
-            
-            .testimonial-overlay {
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.3s ease !important;
-                z-index: 10;
-            }
-            .hover-testimonial.active .testimonial-overlay {
-                opacity: 1 !important;
-                visibility: visible !important;
-            }
+            <div class="right-content">
+                <div class="star">✦</div>
 
-                .hover-testimonial.active img {
-                    transform: scale(1.05) !important;
-                    filter: blur(2px) !important;
-                }
-            
-            @media (max-width: 1200px) {
-                .testimonial-grid {
-                    grid-template-columns: 180px 180px 350px 180px !important;
-                    gap: 15px !important;
-                }
-            }
-            
-            @media (max-width: 1024px) {
-                .testimonial-grid {
-                    grid-template-columns: 1fr 1fr !important;
-                    gap: 15px !important;
-                    justify-content: center !important;
-                }
-                .featured-testimonial {
-                    grid-column: span 2 !important;
-                }
-                .customer-card {
-                    height: 250px !important;
-                }
-            }
-            
-            @media (max-width: 1024px) {
-                .awards-container {
-                    position: static !important;
-                    justify-content: center !important;
-                    margin: 20px 0 !important;
-                }
-                .testimonial-title {
-                    text-align: center !important;
-                }
-            }
-            
-            @media (max-width: 768px) {
-                .testimonial-hero-section {
-                    margin-bottom: 4px !important;
-                    padding: 40px 0 !important;
-                }
-                .testimonial-title {
-                    font-size: 2.5rem !important;
-                    text-align: center !important;
-                }
-                .awards-container {
-                    position: static !important;
-                    justify-content: center !important;
-                    gap: 8px !important;
-                    margin: 15px 0 !important;
-                }
-                .award-badge {
-                    min-width: 75px !important;
-                    padding: 8px 10px !important;
-                }
-                .testimonial-grid {
-                    grid-template-columns: 1fr !important;
-                    gap: 15px !important;
-                }
-                .featured-testimonial {
-                    grid-column: span 1 !important;
-                    flex-direction: column !important;
-                    text-align: center !important;
-                    padding: 25px 15px !important;
-                    height: auto !important;
-                }
-                .featured-testimonial > div:first-child {
-                    margin-right: 0 !important;
-                    margin-bottom: 15px !important;
-                }
-                .customer-card {
-                    height: 200px !important;
-                }
-            }
-            
-            @media (max-width: 480px) {
-                .testimonial-hero-section {
-                    margin-bottom: 0px !important;
-                    padding: 30px 0 !important;
-                }
-            }
-        </style>
+                <p class="testimonial-text">
+                    WealthEmpires is incredibly intuitive and has streamlined our workflow significantly.
+                </p>
+
+                <div class="author">
+                    <h4>Sarah Miller</h4>
+                    <p>Director of Operations</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="customer-card" data-testimonial="3">
+        <div class="card-expanded-layout">
+
+            <img class="person-img"
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&crop=face"
+                alt="Testimonial Person">
+
+            <div class="right-content">
+                <div class="star">✦</div>
+
+                <p class="testimonial-text">
+                    With WealthEmpires we found a platform that integrates easily and helps manage projects beautifully.
+                </p>
+
+                <div class="author">
+                    <h4>Wes Ulmer</h4>
+                    <p>CEO, BD Tech</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+        <!-- Testimonials Grid -->
+        
+    </div>
+</div>
+
+<style>
+    .testimonial-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* Base card */
+.customer-card {
+    width: 260px;
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 0.35s ease, transform 0.35s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+/* Expanded card */
+.customer-card.active {
+    width: 650px;
+}
+
+/* Expanded layout */
+.card-expanded-layout {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Image */
+.person-img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+/* Right side content */
+.right-content {
+    flex: 1;
+    padding: 20px 10px 20px 0;
+}
+
+/* Star */
+.star {
+    font-size: 20px;
+    color: #ff3366;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+
+    /* hidden initially */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.35s ease, max-height 0.35s ease;
+}
+
+.customer-card.active .testimonial-text {
+    opacity: 1;
+    max-height: 300px;
+}
+
+/* Author */
+.author h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.author p {
+    margin: 3px 0 0 0;
+    color: #596579;
+}
+
+/* Shift effects */
+.shift-left {
+    transform: translateX(-100px);
+}
+
+.shift-right {
+    transform: translateX(100px);
+}
+@media (max-width: 768px) {
+
+    .testimonial-grid {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .customer-card {
+        width: 100%;
+        max-width: 420px;
+        transition: none; /* prevent jumpy animations */
+    }
+
+    .customer-card.active {
+        width: 100%;
+    }
+
+    /* Layout becomes vertical */
+    .card-expanded-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Image FULL width on mobile */
+    .person-img {
+        width: 100%;
+        height: 260px;
+        border-radius: 20px;
+    }
+
+    /* Show content normally */
+    .testimonial-text {
+        max-height: 500px;
+        opacity: 1;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    /* Remove shifting animation on mobile */
+    .shift-left, .shift-right {
+        transform: none;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .customer-card {
+        width: 200px;
+    }
+
+    .customer-card.active {
+        width: 500px;
+    }
+
+    .person-img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .right-content {
+        padding-right: 5px;
+    }
+
+    .testimonial-text {
+        font-size: 15px;
+    }
+}
+@media (min-width: 1400px) {
+    .customer-card.active {
+        width: 700px;
+    }
+
+    .person-img {
+        width: 280px;
+        height: 330px;
+    }
+
+    .testimonial-text {
+        font-size: 18px;
+    }
+}
+
+</style>
+
+<script>
+const cards = document.querySelectorAll(".customer-card");
+
+cards.forEach((card, index) => {
+    card.addEventListener("click", () => {
+
+        cards.forEach(c =>
+            c.classList.remove("active", "shift-left", "shift-right")
+        );
+
+        card.classList.add("active");
+
+        cards.forEach((c, i) => {
+            if (i < index) c.classList.add("shift-left");
+            else if (i > index) c.classList.add("shift-right");
+        });
+    });
+});
+
+
+
+</script>
+
+
+        
     </section>
 
      <!-- CTA Section (centered dark hero) -->
@@ -2404,7 +2594,7 @@
             </div>
         </div>
     </section> -->
-    <section class="cta-hero-section" style="margin: 82px; border-radius: 28px; position: relative; overflow: hidden; background: #0f1724; color: #fff;">
+    <section class="cta-hero-section" style="margin: 82px; border-radius: 28px; position: relative; overflow: hidden; background: #0f1724; color: #fff; margin-left: 4rem;">
         <style>
             .cta-wrap { max-width:1200px; margin:0 auto; padding:44px 36px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:22px; }
             .cta-badge { background: #666; color: rgba(255,255,255,0.92); padding:8px 18px; border-radius:999px; font-weight:700; letter-spacing:1px; font-size:14px; }
@@ -2574,12 +2764,44 @@
                 <div class="logo-section">
                     <img src="Wealth Empires.jpg" alt="Wealth Empires" class="footer-logo">
                 </div>
-                <div class="header-divider"></div>
-                <div class="contact-section">
-                    <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
+                <div class="header-divider">
+                    <div class="contact-section">
+                        <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
+                    </div>
+                    <div class="mail-support">
+                        <a href="mailto:support@wealthempires.in" class="support-email">
+                            support@wealthempires.in
+                        </a>
+                    </div>
                 </div>
+                
+
             </div>
         </div>
+        <style>
+                .header-divider {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+    /* Tablet and smaller */
+    @media (max-width: 768px) {
+        .header-divider {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+        .header-divider {
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+    }
+
+        </style>
 
         <div class="footer-content">
             <div class="footer-column">

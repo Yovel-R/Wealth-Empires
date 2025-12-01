@@ -54,6 +54,7 @@
             padding: 80px 20px 60px;
             background: #f8f9fa;
             position: relative;
+            
         }
 
         .container {
@@ -224,7 +225,7 @@
 
         /* Statistics Section */
         .stats-section {
-            background: #2d5a3d;
+            background: #1f2937;
             color: white;
             padding: 60px 20px;
         }
@@ -360,6 +361,7 @@
         @media (max-width: 480px) {
             .hero-section {
                 padding: 60px 16px 40px;
+                padding-top: 3rem !important;
             }
             
             .stats-section {
@@ -543,7 +545,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" style="padding-top: 10rem;">
         <div class="container">
             <div class="hero-wrapper">
                 <!-- Left Side - Content -->
@@ -617,8 +619,54 @@
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea>
                             </div>
+                            <style>
+                                #message {
+                                    width: 100%;       /* or any px value like 300px */
+                                    height: 150px;     /* fixed height */
+                                    resize: none;      /* prevents user from resizing */
+                                }
+                                
+                            </style>
                             
-                            <button type="submit" class="submit-btn">Send Message</button>
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fa-solid fa-paper-plane send-icon"></i>
+                            </button>
+                            <style>
+                                .submit-btn {
+                                    position: relative;
+                                    padding: 12px 24px;
+                                    border: none;
+                                    background: #28a745;
+                                    color: white;
+                                    font-size: 16px;
+                                    border-radius: 6px;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    gap: 8px;
+                                }
+
+                                /* Hide icon initially */
+                                .send-icon {
+                                    opacity: 0;
+                                    transform: translateX(-8px);
+                                    transition: all 0.3s ease;
+                                }
+
+                                /* Show icon, hide text on hover */
+                                .submit-btn:hover .btn-text {
+                                    opacity: 0;
+                                    transform: translateX(8px);
+                                }
+
+                                .submit-btn:hover .send-icon {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                            </style>
+
                         </form>
                     </div>
                 </div>
@@ -1900,12 +1948,62 @@
                 <div class="logo-section">
                     <img src="Wealth Empires.jpg" alt="Wealth Empires" class="footer-logo">
                 </div>
-                <div class="header-divider"></div>
-                <div class="contact-section">
-                    <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
+                <div class="header-divider">
+                    <div class="contact-section">
+                        <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
+                    </div>
+                    <div class="mail-support">
+                        <a href="mailto:support@wealthempires.in" class="support-email">
+                            support@wealthempires.in
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <style>
+                .header-divider {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+    /* Tablet and smaller */
+    @media (max-width: 768px) {
+        .header-divider {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+        .header-divider {
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+    }
+.footer-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* logo left, contacts right */
+}
+
+.header-divider {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;       /* push phone + mail to the right */
+  gap: 20px;
+}
+
+.mail-support .support-email {
+  display: inline-block;
+  text-align: right;
+}
+
+
+
+
+        </style>
 
         <div class="footer-content">
             <div class="footer-column">

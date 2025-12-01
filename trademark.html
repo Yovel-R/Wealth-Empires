@@ -568,8 +568,15 @@
         <div class="container">
             <div class="section-title">
                 <h2>Why is Trademark Registration Important?</h2>
-                <p class="lead">Registering your trademark is crucial because it helps protect your brand's identity, builds trust with customers, and ensures your business stands out in a crowded market.</p>
+                <p class="lead highlight-textes" style="color: #000 !important; font-weight: 0.01rem !important; letter-spacing: 0.1px !important;">Registering your trademark is crucial because it helps protect your brand's identity, builds trust with customers, and ensures your business stands out in a crowded market.</p>
             </div>
+            <style>
+                .highlight-textes {
+                    background-color: #c9a961;
+                    border-radius: 1rem;
+                    padding: 4px;
+                }
+            </style>
 
             <div class="tw-grid" aria-label="Trademark benefits">
                 <article class="tw-card">
@@ -708,20 +715,30 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number">TM search by our experts</div>
-                <p class="stat-description">Result within 24 hours</p>
+                <p class="stat-description">Result within <samp class="text-highlight"> 24</samp> hours</p>
             </div>
 
             <div class="stat-card">
                 <div class="stat-number">TM application filing & start using TM</div>
-                <p class="stat-description">1 - 2 days process</p>
+                <p class="stat-description"> <samp class="text-highlight"> 1</samp> <samp class="text-highlight">-</samp> <samp class="text-highlight">2</samp> days process</p>
             </div>
 
             <div class="stat-card">
-                <div class="stat-number">TM registration certificate (10 years validity)</div>
-                <p class="stat-description">Upon approval</p>
+                <div class="stat-number">TM registration certificate</div>
+                <p class="stat-description"><samp class="text-highlight"> 10</samp> years validity Upon approval</p>
             </div>
         </div>
     </section>
+    <style>
+        .stat-description{
+            font-size: 16px;
+        }
+        .text-highlight{
+            font-size: 40px;
+            color: #7851A9;
+            font-style: italic;
+        }
+    </style>
      <script>
         // Mobile navigation toggle: hamburger, nav links and overlay
         document.addEventListener('DOMContentLoaded', function () {
@@ -1357,12 +1374,42 @@
                 <div class="logo-section">
                     <img src="Wealth Empires.jpg" alt="Wealth Empires" class="footer-logo">
                 </div>
-                <div class="header-divider"></div>
-                <div class="contact-section">
-                    <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
+                <div class="header-divider">
+                    <div class="contact-section">
+                        <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
+                    </div>
+                    <div class="mail-support">
+                        <a href="mailto:support@wealthempires.in" class="support-email">
+                            support@wealthempires.in
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <style>
+                .header-divider {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+    /* Tablet and smaller */
+    @media (max-width: 768px) {
+        .header-divider {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+        .header-divider {
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+    }
+
+        </style>
 
         <div class="footer-content">
             <div class="footer-column">
