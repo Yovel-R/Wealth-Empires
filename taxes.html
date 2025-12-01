@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Filing & Advisory Services | ITR, GST, Audit & More with Wealth Empires</title>
+    <link rel="icon" type="image/jpeg" href="Wealth Empires.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="Wealth Empires.jpg">
+    <link rel="stylesheet" href="styles.css?v=9">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Tax Filing and Advisory",
+  "provider": {
+    "@type": "Organization",
+    "name": "Wealth Empires",
+    "url": "https://wealthempires.com"
+  },
+  "description": "Comprehensive tax filing, GST registration, and audit support to ensure compliance and maximize savings.",
+  "areaServed": "India"
+}
+</script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #ffffff;
+        }
+
+        /* Add this to your <style> section or main CSS file */
+        .header-buttons .btn-primary:hover {
+            background: #000 !important;
+            color: #fff !important;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .hero-section {
+            min-height: 110vh;
+            display: flex;
+            align-items: center;
+            /* move hero closer to left edge by reducing left padding */
+            padding: 80px 100px 80px 40px;
+            background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            /* remove internal left padding so content aligns with section's left */
+            padding-left: 0;
+            align-items: center;
+        }
+
+        /* prevent auto-centering of the container inside the hero so left edge stays aligned */
+        .hero-section > .container {
+            margin-left: 0;
+        }
+
+        .hero-left {
+            padding-right: 20px;
+            text-align: left;
+        }
+
+        .hero-left h1 {
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+
+        .hero-left p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin-bottom: 36px;
+            max-width: 540px;
+            text-align: left;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: #2383E2;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(35, 131, 226, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #1a6ec4;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(35, 131, 226, 0.3);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        .hero-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            object-fit: contain;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .pagination-dots {
+            display: flex;
+            gap: 12px;
+            margin-top: 40px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #d1d1d1;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: #2383E2;
+            width: 32px;
+            border-radius: 5px;
+        }
+
+        .dot:hover {
+            background-color: #a0a0a0;
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 1200px) {
+            .hero-section {
+                padding: 80px 60px;
+            }
+
+            .hero-content {
+                padding-left: 0;
+                gap: 60px;
+            }
+
+            .hero-left h1 {
+                font-size: 56px;
+            }
+
+            .gst-info-grid {
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .nav-container {}
+
+            .hero-section {
+                padding: 80px 40px;
+            }
+
+            .hero-content {
+                gap: 50px;
+            }
+
+            .hero-left h1 {
+                font-size: 52px;
+            }
+
+            .hero-left p {
+                font-size: 18px;
+            }
+
+            .gst-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 40px;
+            }
+
+            .documents-section h3 {
+                font-size: 36px;
+            }
+
+            .advantages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                /* --- START OF CHANGE: Slide from RIGHT --- */
+                right: -110%;
+                /* Initial off-screen position (from the right) */
+                left: auto;
+                /* Ensure 'left' property doesn't interfere */
+                /* --- END OF CHANGE --- */
+                top: 0;
+                flex-direction: column;
+                background-color: white;
+                width: 80%;
+                max-width: 350px;
+                height: 100vh;
+                padding: 80px 30px 30px;
+                box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+                /* Changed shadow direction */
+                transition: right 0.3s ease;
+                /* Changed transition property from 'left' to 'right' */
+                overflow-y: auto;
+                z-index: 999;
+                align-items: flex-start;
+                /* Keeps content left-aligned within the menu panel */
+            }
+
+            .nav-links.active {
+                /* --- START OF CHANGE: Active position --- */
+                right: 0;
+                /* Brings the menu onto the screen */
+                /* --- END OF CHANGE --- */
+            }
+
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                margin-top: 8px;
+                margin-left: 16px;
+                display: none;
+            }
+
+            .dropdown.active .dropdown-menu {
+                display: block;
+            }
+
+            .header-buttons {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .btn-demo,
+            .btn-primary {
+                width: auto;
+                max-width: 320px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            .hero-section {
+                padding: 100px 20px 40px;
+                min-height: auto;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-left {
+                padding-right: 0;
+                text-align: center !important;
+            }
+
+            .hero-left h1 {
+                text-align: center !important;
+            }
+
+            .hero-left p {
+                text-align: center !important;
+            }
+
+            .hero-left h1 {
+                font-size: 42px;
+            }
+
+            .hero-left p {
+                font-size: 17px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center !important;
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 8px !important;
+            }
+
+            .btn-large {
+                min-width: 200px;
+                max-width: 320px;
+                width: auto;
+                text-align: center;
+            }
+
+            .hero-right {
+                padding-left: 0;
+                order: -1;
+            }
+
+            .pagination-dots {
+                justify-content: center;
+            }
+
+            .gst-section,
+            .process,
+            .advantages {
+                padding: 60px 20px;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            .section-title p {
+                font-size: 16px;
+            }
+
+            .gst-text h3 {
+                font-size: 26px;
+            }
+
+            .gst-text p {
+                font-size: 15px;
+            }
+
+            .gstin-diagram {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gstin-part {
+                width: 100%;
+                max-width: 200px;
+            }
+
+            .step {
+                flex-direction: column;
+                padding: 24px;
+            }
+
+            .step-content h3 {
+                font-size: 20px;
+            }
+
+            .advantages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .documents-section {
+                padding: 0 20px;
+            }
+
+            .documents-section h3 {
+                font-size: 32px;
+            }
+
+            .documents-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mandatory-section {
+                padding: 0 20px;
+            }
+
+            .mandatory-section h3 {
+                font-size: 28px;
+            }
+
+            /* Footer changes are already fine for mobile stacking */
+            .footer-header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .header-divider {
+                display: none;
+            }
+
+            .contact-section .support-email {
+                margin-bottom: 10px;
+            }
+
+            .contact-section span {
+                display: none;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 32px;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column-reverse;
+                gap: 24px;
+                text-align: center;
+            }
+
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .footer-links span {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-left {
+                text-align: center !important;
+            }
+
+            .hero-left h1 {
+                text-align: center !important;
+                margin-top: 18px !important;
+            }
+
+            .hero-left p {
+                text-align: center !important;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            .logo-text {
+                font-size: 18px;
+            }
+
+            .hero-section {
+                padding: 100px 16px 30px;
+            }
+
+            .hero-left h1 {
+                font-size: 36px;
+            }
+
+            .hero-left p {
+                font-size: 16px;
+                margin-bottom: 28px;
+            }
+
+            .btn-large {
+                padding: 12px 28px;
+                font-size: 15px;
+                min-width: 200px;
+            }
+
+            .pagination-dots {
+                margin-top: 30px;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .gst-text h3 {
+                font-size: 24px;
+            }
+
+            .gstin-format {
+                padding: 20px;
+            }
+
+            .step {
+                padding: 20px;
+            }
+
+            .step-number {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+
+            .step-content h3 {
+                font-size: 18px;
+            }
+
+            .advantage-card {
+                padding: 24px;
+            }
+
+            .document-item {
+                padding: 24px;
+            }
+
+            .documents-section h3 {
+                font-size: 28px;
+            }
+
+            .mandatory-section h3 {
+                font-size: 24px;
+            }
+
+            .mandatory-item {
+                padding: 16px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .footer-links span {
+                display: none;
+            }
+        }
+    </style>
+     <style>
+        /* Keep content from horizontally overflowing on small screens */
+        @media (max-width: 900px) {
+            .container { padding: 0 18px; }
+        }
+
+        @media (max-width: 768px) {
+            body { overflow-x: hidden; }
+            .container { padding: 0 16px; max-width: 100%; }
+            .hero-section { padding: 80px 16px 40px 16px; }
+            .hero-content { grid-template-columns: 1fr; gap: 28px; }
+            .hero-left h1 { font-size: 34px; text-align: center; }
+            .hero-left p { font-size: 16px; text-align: center; max-width: 100%; }
+
+            /* Make partners stack cleanly and reduce large paddings */
+            .partners-grid { grid-template-columns: 1fr !important; gap: 18px; }
+            .partner-card { padding: 18px; min-height: unset; display: flex; flex-direction: row; align-items: center; text-align: left; }
+            .partner-logo { width: 80px; height: 80px; min-width: 80px; margin-right: 14px; }
+            .partner-info { text-align: left; }
+
+            /* Product cards and CTA spacing */
+            .products-section { padding: 40px 16px; grid-template-columns: 1fr; }
+            .cards-grid { grid-template-columns: 1fr; }
+            .cta-hero-section { margin: 20px; border-radius: 14px; }
+        }
+
+        @media (max-width: 480px) {
+            /* Stack partner card content and center text on very small screens */
+            .partner-card { flex-direction: column; text-align: center; gap: 12px; padding: 16px; }
+            .partner-logo { width: 72px; height: 72px; margin: 0 auto; min-width: 72px; }
+            .partner-info { text-align: center; }
+
+            /* Compact CTA styles without altering colors */
+            /* override inline margin on the CTA element and tighten spacing */
+            .cta-hero-section { margin: 12px !important; border-radius: 10px !important; }
+            .cta-wrap { padding: 16px !important; gap:12px !important; }
+            .cta-title { font-size: 22px !important; line-height: 1.05 !important; }
+            .cta-badge { padding:6px 12px !important; font-size:12px !important; }
+            .cta-actions { gap:12px !important; }
+            .btn-pri, .btn-outline { width:100% !important; max-width:420px !important; padding:10px 18px !important; font-size:16px !important; }
+
+            .hero-left h1 { font-size: 28px; }
+            .hero-left p { font-size: 15px; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    <header >
+        <div class="nav-container" >
+            <nav>
+                <div class="logo">
+                    <a href="index.html"
+                        style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                        <img src="Wealth Empires.jpg" alt="Wealth Empires Logo"
+                            style="height: 48px; width: auto; border-radius: 8px;">
+                        <div class="logo-text">Wealth Empires</div>
+                    </a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="incorporation.html" class="dropdown-item">
+                                <span>Incorporation</span>
+                            </a>
+                            <a href="360-compliance.html" class="dropdown-item">
+                                <span>360° Compliance</span>
+                            </a>
+                            <a href="trademark.html" class="dropdown-item">
+                                <span>Trademark</span>
+                            </a>
+                            <a href="taxes.html" class="dropdown-item">
+                                <span>Taxes</span>
+                            </a>
+
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Our Product <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="https://aistartupdoctor.com/" class="dropdown-item">
+                                <span>Startup Doctor</span>
+                            </a>
+                            <a href="https://hitworth.wealthempires.in/" class="dropdown-item">
+                                <span>HitWorth</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li><a href="our-partner.html">Our Partners</a></li>
+                    <li class="header-buttons-li">
+                        <div class="header-buttons">
+                            <a href="contact.html" class="btn-demo">Contact Us</a>
+                            <a href="https://crm.wealthempires.in/" class="btn-primary" style="color: white;">Start
+                                Incorporation</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="margin-bottom: -40px;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1>Tax Services & GST Registration</h1>
+                    <p>Comprehensive tax solutions including GST registration, income tax filing, and ongoing tax
+                        compliance for businesses and individuals.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn-large btn-black">Contact Us</a>
+                        <a href="https://crm.wealthempires.in/" class="btn-large btn-primary"
+                            style="color: white;">Start Tax Services</a>
+                    </div>
+                   <div class="hero-buttons mt-2 flex justify-center lg:justify-start" style="gap:16px;margin-top: -19px;">
+                        <img src="img/google review.png" alt="Google Reviews" style="height:45px; align-self:center;">
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div>
+                        <img src="hero.png" alt="heroimage" width="100%" height=auto>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GST Registration Section -->
+    <section id="gst-registration" class="gst-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>GST Registration Services</h2>
+                <p>Complete GST registration solutions for your business compliance needs</p>
+            </div>
+
+            <!-- What is GST Registration -->
+            <div class="gst-content">
+                <div class="gst-info-grid">
+                    <div class="gst-text">
+                        <h3>What is GST Registration?</h3>
+                        <p>GST registration is the process by which a business obtains a unique identification number,
+                            known as a GSTIN (Goods and Services Tax Identification Number), making it liable to pay
+                            Goods and Services Tax (GST) in India. According to the Central Goods and Services Tax Act
+                            of 2017, businesses with an annual turnover exceeding ₹40 lakh (or ₹20 lakh in specific
+                            special category states) are required to register as taxable entities.</p>
+
+                        <p>The GSTIN, a 15-digit number, uniquely identifies each taxpayer under the GST framework and
+                            allows authorities to monitor transactions and related data effectively.</p>
+
+                        <p>GST, or Goods and Services Tax, is a destination-based, multi-stage, indirect tax that
+                            replaces various other taxes, including VAT and excise duties. Under the GST Act of 2017,
+                            businesses that previously paid service tax, excise duty, or VAT must now register for GST.
+                            Additionally, GST registration is mandatory for eCommerce sellers regardless of turnover.
+                        </p>
+
+                        <p>Citizens can complete GST registration online through the official GST portal, eliminating
+                            the need for in-person visits to government offices. After submitting an application, the
+                            portal generates an ARN (Application Reference Number) status immediately, allowing
+                            applicants to track their registration progress.</p>
+
+                        <div class="note-box">
+                            <p><strong>Note:</strong> This threshold can change from state-to-state, for the latest and
+                                accurate information get in touch with our experts today.</p>
+                        </div>
+                    </div>
+
+                    <div class="gst-visual">
+                        <div class="gstin-format">
+                            <h4>GSTIN Number Format</h4>
+                            <div class="gstin-diagram">
+                                <div class="gstin-part">
+                                    <div class="gstin-number">22</div>
+                                    <div class="gstin-label">State code</div>
+                                </div>
+                                <div class="gstin-part">
+                                    <div class="gstin-number main">ABCDE1234F</div>
+                                    <div class="gstin-label">Permanent Account Number<br>PAN</div>
+                                </div>
+                                <div class="gstin-part">
+                                    <div class="gstin-number">1</div>
+                                    <div class="gstin-label">Entity Number of<br>same PAN</div>
+                                </div>
+                                <div class="gstin-part">
+                                    <div class="gstin-number">Z</div>
+                                    <div class="gstin-label">Alphabet Z by<br>default</div>
+                                </div>
+                                <div class="gstin-part">
+                                    <div class="gstin-number">5</div>
+                                    <div class="gstin-label">Checksum digit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GST Registration Process Section -->
+                <section class="process" style="background: #fff; padding: 20px 0;">
+                    <div class="container">
+                        <div class="section-title">
+                            <h2>Step-by-Step Guide For GST Registration Process</h2>
+                            <p>Here are 4 steps to complete your GST registration process</p>
+                        </div>
+                        <div class="process-timeline"
+                            style="width: 80px; height: 3px; background: #F4C430; margin: 16px auto 0; border-radius: 2px;">
+                        </div>
+                        <ol class="gst-steps-grid" aria-label="GST Registration Steps">
+                            <li class="gst-card">
+                                <div class="card-body">
+                                    <h3>Get in touch with our experts</h3>
+                                    <p>Book a slot with our GST experts and resolve all your queries. Our experienced team will guide you through the entire process and answer any questions you may have about GST registration.</p>
+                                    <span class="card-badge">Initial Consultation</span>
+                                </div>
+                                <div class="step-circle" aria-hidden="true">01</div>
+                            </li>
+
+                            <li class="gst-card">
+                                <div class="card-body">
+                                    <h3>Provide Business Information</h3>
+                                    <p>Provide the required documents and fill in essential business details such as business name, SEZ unit, principal place of business, additional places, mobile number, email address, state and PAN details to initiate registration.</p>
+                                    <span class="card-badge">Document Collection</span>
+                                </div>
+                                <div class="step-circle" aria-hidden="true">02</div>
+                            </li>
+
+                            <li class="gst-card">
+                                <div class="card-body">
+                                    <h3>Filing for GST Registration</h3>
+                                    <p>Our team will file your GST registration application on the official portal and assist with OTP verification. We handle the technical filing to ensure accuracy and timely submission.</p>
+                                    <span class="card-badge">Application Filing</span>
+                                </div>
+                                <div class="step-circle" aria-hidden="true">03</div>
+                            </li>
+
+                            <li class="gst-card">
+                                <div class="card-body">
+                                    <h3>Get your GSTIN</h3>
+                                    <p>After verification you will receive an Application Reference Number (ARN) to track the status. The GST registration certificate will be available on the official GST portal upon completion.</p>
+                                    <span class="card-badge">Certificate Issued</span>
+                                </div>
+                                <div class="step-circle" aria-hidden="true">04</div>
+                            </li>
+                        </ol>
+
+                        <!-- Important Note -->
+                        <div class="process-footer">
+                            <div class="note-box" style="max-width: 800px; margin: 40px auto; text-align: left;">
+                                <p><strong>Important:</strong> All the documents should be submitted within a time frame
+                                    and accurate as per the government guidelines to avoid delay. The GST certificate
+                                    will be delivered directly by the Central government. We will initiate and guide you
+                                    through the process.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Benefits of GST Registration Section (Black & White theme) -->
+                <section class="advantages bw-advantages">
+                    <div class="container">
+                        <div class="section-title">
+                            <h2>Benefits of Registering for GST</h2>
+                            <p>Discover the advantages that GST registration brings to your business</p>
+                        </div>
+
+                        <div class="benefits-grid" role="list">
+                            <article class="benefit-card" role="listitem">
+                                <div class="benefit-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                                <div class="benefit-body">
+                                    <h4>Legal Recognition</h4>
+                                    <p>A firm can obtain legal recognition as a supplier of goods or services by registering for GST. This validates the company's legal status as an official entity.</p>
+                                </div>
+                            </article>
+
+                            <article class="benefit-card" role="listitem">
+                                <div class="benefit-icon"><i class="fa-regular fa-credit-card" aria-hidden="true"></i></div>
+                                <div class="benefit-body">
+                                    <h4>Input Tax Credit (ITC)</h4>
+                                    <p>Registered businesses can claim Input Tax Credit for GST paid on purchases, reducing their overall tax liability.</p>
+                                </div>
+                            </article>
+
+                            <article class="benefit-card" role="listitem">
+                                <div class="benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+                                <div class="benefit-body">
+                                    <h4>Simplified Process</h4>
+                                    <p>GST streamlines tax submission and payments through a single online portal, reducing compliance time and complexity.</p>
+                                </div>
+                            </article>
+
+                            <article class="benefit-card" role="listitem">
+                                <div class="benefit-icon"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></div>
+                                <div class="benefit-body">
+                                    <h4>Composition Scheme</h4>
+                                    <p>The Composition Scheme allows eligible small businesses to pay tax at a lower rate, reducing compliance burden and simplifying accounting.</p>
+                                </div>
+                            </article>
+
+                            <article class="benefit-card" role="listitem">
+                                <div class="benefit-icon"><i class="fa-regular fa-handshake" aria-hidden="true"></i></div>
+                                <div class="benefit-body">
+                                    <h4>Higher Threshold for GST Registration</h4>
+                                    <p>Only businesses with turnover above the prescribed threshold are required to register, which relieves many small firms from mandatory registration obligations.</p>
+                                </div>
+                            </article>
+
+                            <article class="benefit-card" role="listitem">
+                                <div class="benefit-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+                                <div class="benefit-body">
+                                    <h4>Eliminates the Cascading Effect of Taxes</h4>
+                                    <p>GST allows input tax credit across the supply chain, preventing tax-on-tax and lowering the final tax burden for consumers.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="documents-section">
+                    <h3>Included With Your Registration.<br>Built To Move You Faster.</h3>
+                    <p>Instantly available from your Dashboard.</p>
+
+
+                    <div class="documents-grid">
+                        <div class="document-item">
+                            <h4>Identity Documents</h4>
+                            <div class="doc-description" style="color: rgb(244, 244, 198);">For first-time founders who need the basics to launch with
+                                confidence.</div>
+                            <ul>
+                                <li>Applicant's PAN</li>
+                                <li>Aadhaar card</li>
+                                <li>Promoters/Director's Identity and Address proof with Photographs</li>
+                            </ul>
+                        </div>
+
+                        <div class="document-item">
+                            <h4>Business Documents</h4>
+                            <div class="doc-description" style="color: rgb(244, 244, 198);">Stay 100% compliant with tax, legal, and regulatory rules.
+                            </div>
+                            <ul>
+                                <li>Evidence of business registration or Incorporation certificate</li>
+                                <li>Business location Address proof</li>
+                                <li>Letter of Authorisation or Board Resolution for Authorised Signatory</li>
+                            </ul>
+                        </div>
+
+                        <div class="document-item">
+                            <h4>Address Proof</h4>
+                            <div class="doc-description" style="color:rgb(244, 244, 198);">For founders who want full legal + compliance, plus a dedicated
+                                bookkeeper.</div>
+                            <ul>
+                                <li>Electricity bill and utility bill of the office address</li>
+                                <li>Business location Address proof</li>
+                            </ul>
+                        </div>
+
+                        <div class="document-item">
+                            <h4>Financial Documents</h4>
+                            <div class="doc-description" style="color:rgb(244, 244, 198);">Complete financial documentation for your business setup.</div>
+                            <ul>
+                                <li>Bank account details, statement or canceled cheque</li>
+                                <li>Digital Signature Certificate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mandatory Registration -->
+                <div class="mandatory-section" style="margin-bottom: -30px;">
+                    <h3>Mandatory GST Registration for Specific Businesses</h3>
+                    <p>Irrespective of the threshold limit GST registration is mandatory for the following:</p>
+
+                    <div class="mandatory-list">
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>Individuals engaging in interstate taxable supply (with a threshold of ₹20 lakhs/₹10
+                                lakhs applicable for interstate supply of taxable services, specified handicraft goods,
+                                and handmade goods)</p>
+                        </div>
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>Casual taxable persons involved in taxable supply</p>
+                        </div>
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>Individuals obligated to pay tax under reverse charge for received inward supplies</p>
+                        </div>
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>Non-resident taxable persons engaged in taxable supply</p>
+                        </div>
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>E-commerce entities (inclusive of every e-commerce operator and individuals supplying
+                                goods and/or services)</p>
+                        </div>
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>Individuals required to deduct tax under Section 51</p>
+                        </div>
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>Input service distributor</p>
+                        </div>
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>Individuals making taxable supply of goods or services on behalf of other taxable
+                                persons, whether as an agent or otherwise</p>
+                        </div>
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>Individuals required to pay tax under Section 9(5)</p>
+                        </div>
+                        <div class="mandatory-item">
+                            <span class="bullet">●</span>
+                            <p>Any other individuals or categories notified by the government</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- CTA Section (centered dark hero) -->
+    <section class="cta-hero-section" style="margin: 82px; border-radius: 28px; position: relative; overflow: hidden; background: #0f1724; color: #fff;">
+        <style>
+            .cta-wrap { max-width:1200px; margin:0 auto; padding:44px 36px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:22px; }
+            .cta-badge { background: #666; color: rgba(255,255,255,0.92); padding:8px 18px; border-radius:999px; font-weight:700; letter-spacing:1px; font-size:14px; }
+            .cta-title { font-size:48px; line-height:0.80; margin:0; font-weight:700; font-family: Questrial, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; }
+            .cta-sub { max-width:920px; color: rgba(255,255,255,0.78); font-size:18px; margin:0; }
+            .cta-actions { display:flex; gap:18px; margin-top:6px; }
+           
+            .btn-outline { background:transparent; color: rgba(255,255,255,0.92); padding:12px 30px;border:2px solid #fff; text-decoration:none; font-weight:700; }
+            .btn-outline:hover{ transform: translateY(-2px); border-color:#fff; }
+            .btn-pri { background:#fff; color: #000; padding:12px 30px;border:2px solid #fff; text-decoration:none; font-weight:700; }
+            .btn-pri:hover{ transform: translateY(-2px); border-color:#fff; }
+
+            @media (max-width: 900px) {
+                .cta-wrap { padding:44px 28px; }
+                .cta-title { font-size:40px; }
+                .cta-sub { font-size:16px; }
+            }
+            @media (max-width: 480px) {
+                .cta-wrap { padding:28px 18px; }
+                .cta-title { font-size:26px; }
+                .cta-actions { flex-direction:column; width:100%; }
+                .btn-pri, .btn-outline { width:100%; max-width:420px; }
+            }
+        </style>
+
+        <div class="cta-wrap">
+            <div class="cta-badge">#PEOPLEFIRSTCULTURE</div>
+            <h2 class="cta-title">India's No.1 Startup </h2>
+            <h2 class="cta-title">friendly auditing firm</h2>
+            <div class="cta-actions" role="group" aria-label="Call to actions">
+                <a class="btn-pri" href="contact.html">Start incorporation</a>
+                <a class="btn-outline" href="contact.html">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <style>
+        @media (max-width: 768px) {
+            /* Stack header items vertically */
+            .footer-header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .header-divider {
+                display: none;
+            }
+
+            /* Perfect accordion-style footer content */
+            .footer-content {
+                flex-direction: column;
+                padding: 0 20px;
+                gap: 0;
+            }
+
+            .footer-column {
+                margin-bottom: 0;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .footer-column:last-child {
+                border-bottom: none;
+            }
+
+            /* Dropdown header styling - matches reference */
+            .footer-column h3 {
+                margin: 0;
+                padding: 18px 0;
+                font-size: 16px;
+                font-weight: 500;
+                color: #333;
+                cursor: pointer;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #fff;
+                transition: all 0.3s ease;
+                text-align: left;
+            }
+
+            .footer-column h3:hover {
+                background: #f8f9fa;
+            }
+
+            /* Dropdown arrow */
+            .footer-column h3::after {
+                content: '▼';
+                font-size: 12px;
+                color: #999;
+                transform: rotate(0deg);
+                transition: transform 0.3s ease;
+            }
+
+            .footer-column h3.active::after {
+                transform: rotate(180deg);
+            }
+
+            /* Dropdown content */
+            .footer-column ul {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                background: #fff;
+            }
+
+            .footer-column ul.active {
+                max-height: 500px;
+                padding: 0 0 20px 0;
+            }
+
+            .footer-column ul li {
+                margin: 0;
+                padding: 8px 0;
+            }
+
+            .footer-column ul li a {
+                color: #666;
+                text-decoration: none;
+                font-size: 14px;
+                display: block;
+                transition: color 0.2s ease;
+                text-align: left;
+            }
+
+            .footer-column ul li a:hover {
+                color: #2563eb;
+            }
+
+            /* Hide secondary headings (Templates, Partnership, Quick links) on mobile */
+            .footer-column h3[style*="margin-top"] {
+                display: none;
+            }
+
+            /* Stack bottom links and social media vertically */
+            .footer-bottom-content {
+                flex-direction: column-reverse;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .footer-links span {
+                display: none;
+            }
+
+            .footer-right {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+    <footer class="footer-container">
+        <!-- Top Header Section -->
+        <div class="footer-header">
+            <div class="footer-header-content">
+                <div class="logo-section">
+                    <img src="Wealth Empires.jpg" alt="Wealth Empires" class="footer-logo">
+                </div>
+                <div class="header-divider"></div>
+                <div class="contact-section">
+                    <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="https://aistartupdoctor.com/">Startup Doctor</a></li>
+                    <li><a href="https://hitworth.wealthempires.in">HitWorth</a></li>
+                    <li><a href="https://crm.wealthempires.in">WE CRM</a></li>
+                </ul>
+                <h3 style="margin-top: 32px;">Talk To Experts</h3>
+                <ul>
+                    <li><a href="https://wealthempires.in/contact.html">Online CA Consultation</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">Online Lawyer Consultation</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">Online GST Consultation</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">Online Business Consultation</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">Legal Consultation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Templates</h3>
+                <ul>
+                    <li><a href="#">Partnership Agreement</a></li>
+                    <li><a href="#">Rental Agreement</a></li>
+                    <li><a href="#">Service Contract</a></li>
+                </ul>
+                <h3 style="margin-top: 32px;">Quick links</h3>
+                <ul>
+                    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA Portal</a></li>
+                    <li><a href="https://www.gst.gov.in/">GST Portal</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">File ITR</a></li>
+                    <li><a href="https://tmrsearch.ipindia.gov.in/estatus">Check Trademark status</a></li>
+                    <li><a href="https://uasl.uk.com/certifiedorganization/">Check ISO Validity</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="https://wealthempires.in/incorporation.html">Business Incorporation </a></li>
+                    <li><a href="https://wealthempires.in/360-compliance.html">360 degree Compliance</a></li>
+                    <li><a href="https://wealthempires.in/360-compliance.html">360 degree Accounting </a></li>
+                    <li><a href="https://wealthempires.in/trademark.html">Trademark Registration Platform </a></li>
+                    <li><a href="https://wealthempires.in/taxes.html">GST Registration Online</a></li>
+                    <li><a href="https://wealthempires.in/taxes.html">Tax Planning</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">ISO Certification</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">Funding</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">Risk Mitigation</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://wealthempires.medium.com/">Blog</a></li>
+                    <li><a href="https://freshbooks.in">Coupons</a></li>
+                    <li><a href="https://wealthempires.medium.com/">eBooks</a></li>
+                    <li><a href="#perks">Perks</a></li>
+                    <li><a href="https://www.youtube.com/@thewealthempires">videos</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">FAQ</a></li>
+                </ul>
+                <h3 style="margin-top: 32px;">Partnership</h3>
+                <ul>
+                    <li><a href="https://wealthempires.in/contact.html">Sponsorship</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">B2B Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="https://wealthempires.in/our-story.html">About us</a></li>
+                    <li><a href="https://wealthempires.in/our-story.html">Our Story</a></li>
+                    <li><a href="https://wealthempires.in/our-partner.html">Partners</a></li>
+                    <li><a href="https://www.linkedin.com/company/wealthempires">Careers</a></li>
+                    <li><a href="https://wealthempires.in/our-story.html">Life at Wealth Empires</a></li>
+                    <li><a href="https://wealthempires.in/our-story.html">Brand assets</a></li>
+                    <li><a href="https://wealthempires.in/our-story.html">Office</a></li>
+                    <li><a href="https://wealthempires.in/compare.html">Compare</a></li>
+                    <li><a href="https://wealthempires.in/contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="footer-links">
+                    <a href="Terms of Service.html">Terms of Service</a>
+                    <span>|</span>
+                    <a href="Privacy Policy.html">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="gdpr.html">Compliance & Security</a>
+                    <span>|</span>
+                    <a href="gdpr.html">GDPR</a>
+                    <span>|</span>
+                    <a href="Responsible Disclosure Policy.html">Responsible Disclosure</a>
+                    <span>|</span>
+                </div>
+
+                <div class="footer-right">
+                    <div class="copyright">
+                        Copyright © 2025 Wealth Empires Inc.
+                    </div>
+                    <div class="social-links">
+                        <a href="https://x.com/wewealthempires" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/wealthempires" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/thewealthempires" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@thewealthempires" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle: hamburger, nav links and overlay
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+            const navOverlay = document.getElementById('navOverlay');
+
+            function closeMenu() {
+                if (hamburger) hamburger.classList.remove('active');
+                if (navLinks) navLinks.classList.remove('active');
+                if (navOverlay) navOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    hamburger.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                    if (navOverlay) navOverlay.classList.toggle('active');
+
+                    // Prevent body scrolling while menu is open
+                    if (navLinks.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            if (navOverlay) {
+                navOverlay.addEventListener('click', function () {
+                    closeMenu();
+                });
+            }
+
+            // Close menu when resizing to desktop
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) {
+                    closeMenu();
+                }
+            });
+
+            // Allow mobile dropdowns in the nav to expand/collapse when tapped
+            document.querySelectorAll('.dropdown-toggle').forEach(function (toggle) {
+                toggle.setAttribute('role', 'button');
+                toggle.setAttribute('aria-expanded', 'false');
+                toggle.addEventListener('click', function (e) {
+                    if (window.innerWidth <= 1024) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const parent = toggle.closest('.dropdown');
+                        if (!parent) return;
+
+                        const isActive = parent.classList.contains('active');
+
+                        // Close other dropdowns
+                        document.querySelectorAll('.dropdown').forEach(function (d) {
+                            if (d !== parent) d.classList.remove('active');
+                        });
+
+                        if (!isActive) {
+                            parent.classList.add('active');
+                            toggle.setAttribute('aria-expanded', 'true');
+                        } else {
+                            parent.classList.remove('active');
+                            toggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                });
+            });
+
+            // Close any open dropdowns if clicking outside the nav on mobile
+            document.addEventListener('click', function (e) {
+                if (window.innerWidth <= 1024) {
+                    const insideNav = e.target.closest && e.target.closest('#navLinks');
+                    if (!insideNav) {
+                        document.querySelectorAll('.dropdown').forEach(function (d) { d.classList.remove('active'); });
+                        document.querySelectorAll('.dropdown-toggle').forEach(function (t) { t.setAttribute('aria-expanded', 'false'); });
+                    }
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        // Mobile footer accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Only activate on mobile devices
+            if (window.innerWidth <= 768) {
+                initFooterAccordion();
+            }
+            
+            // Reinitialize on window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth <= 768) {
+                    initFooterAccordion();
+                } else {
+                    resetFooterAccordion();
+                }
+            });
+        });
+
+        function initFooterAccordion() {
+            const footerColumns = document.querySelectorAll('.footer-column');
+            
+            footerColumns.forEach(column => {
+                const heading = column.querySelector('h3');
+                const list = column.querySelector('ul');
+                
+                if (heading && list && !heading.hasAttribute('style')) {
+                    // Initially collapse all sections
+                    list.classList.remove('active');
+                    heading.classList.remove('active');
+                    
+                    // Remove any existing click listeners
+                    const newHeading = heading.cloneNode(true);
+                    heading.parentNode.replaceChild(newHeading, heading);
+                    
+                    // Add click listener
+                    newHeading.addEventListener('click', function() {
+                        const newList = column.querySelector('ul');
+                        const isActive = newList.classList.contains('active');
+                        
+                        // Close all other sections
+                        footerColumns.forEach(otherColumn => {
+                            const otherList = otherColumn.querySelector('ul');
+                            const otherHeading = otherColumn.querySelector('h3');
+                            if (otherList && otherHeading && !otherHeading.hasAttribute('style')) {
+                                otherList.classList.remove('active');
+                                otherHeading.classList.remove('active');
+                            }
+                        });
+                        
+                        // Toggle current section
+                        if (!isActive) {
+                            newList.classList.add('active');
+                            newHeading.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        function resetFooterAccordion() {
+            const footerColumns = document.querySelectorAll('.footer-column');
+            
+            footerColumns.forEach(column => {
+                const heading = column.querySelector('h3');
+                const list = column.querySelector('ul');
+                
+                if (heading && list) {
+                    list.classList.remove('active');
+                    heading.classList.remove('active');
+                    
+                    // Remove click listeners
+                    const newHeading = heading.cloneNode(true);
+                    heading.parentNode.replaceChild(newHeading, heading);
+                }
+            });
+        }
+    </script>
+    <style>
+        @media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: row;
+        /* gap: 12px; */
+    }
+}
+    </style>
+</body>
+
+</html>
