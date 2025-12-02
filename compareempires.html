@@ -31,10 +31,10 @@
         /* Header uses styles.css - no custom styling needed */
         
         /* Force table styles to override any CSS conflicts */
-        .hero-section {
+        .hero-sections {
             padding: 80px 24px 60px !important;
             text-align: center !important;
-            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%) !important;
+            background-color: white !important;
         }
 
         .main-title {
@@ -237,7 +237,7 @@
         @media (max-width: 768px) {
             
             /* Hero Section Mobile */
-            .hero-section {
+            .hero-sections {
                 padding: 40px 16px 30px !important;
                 margin-top: 0 !important;
             }
@@ -331,7 +331,7 @@
         @media (max-width: 768px) {
             body { overflow-x: hidden; }
             .container { padding: 0 16px; max-width: 100%; }
-            .hero-section { padding: 80px 16px 40px 16px; }
+            .hero-sections { padding: 80px 16px 40px 16px; }
             .hero-content { grid-template-columns: 1fr; gap: 28px; }
             .hero-left h1 { font-size: 34px; text-align: center; }
             .hero-left p { font-size: 16px; text-align: center; max-width: 100%; }
@@ -432,8 +432,8 @@
         </div>
     </header>
 
-    <section class="hero-section" style="margin-top: -30px;">
-        <h1 class="main-title" style="font-family: Questrial;">Stay Legally <span style="color: #7851A9;">Sound In</span> One Click!.</h1>
+    <section class="hero-sections" style="margin-top: -30px; background-color: white !important;">
+        <h1 class="main-title" style="font-family: Questrial;;">Stay Legally <span style="color: #7851A9;">Sound In</span> One Click!.</h1>
         <p class="subtitle">There's no reason to pay crazy high prices to start your business.</p>
         <p class="subtitle-secondary">Wealth Empires does it worry-free, without the hidden fees.</p>
     </section>
@@ -575,185 +575,290 @@
            
         </div>
     </div> -->
-    <div class="table-scroll-wrapper">
-    <div class="comparison-table">
-
-        <!-- Header -->
-        <div class="comparison-row comparison-header">
-            <div class="feature-name"></div>
-
-            <div class="company-header highlight">
-                <div class="company-title" style="color: white !important;">Wealth Empires</div>
-            </div>
-
-            <div class="company-header">
-                <div class="company-title">India Filings</div>
-            </div>
-
-            <div class="company-header">
-                <div class="company-title">Vakil Search</div>
-            </div>
-
-            <div class="company-header">
-                <div class="company-title">Quick Company</div>
-            </div>
-
-            <div class="company-header">
-                <div class="company-title">Egnoil</div>
-            </div>
-        </div>
-
-        <!-- Row -->
-        <div class="comparison-row">
-            <div class="feature-name">MCA Compliance</div>
-            <div class="cell highlight " style="color:#16a34a; font-weight:700;"><p>✔ 22.5K</p></div>
-            <div class="cell"><p>25.8K</p></div>
-            <div class="cell"><p>28K</p></div>
-            <div class="cell" style="background:#ffe5e5; color:#b91c1c; font-weight:700;"><p>35K</p></div>
-            <div class="cell"><p>30K</p></div>
-        </div>
-
-        <div class="comparison-row">
-            <div class="feature-name">Trademark</div>
-            <div class="cell highlight"style="color:#16a34a; font-weight:700;"><p>✔ 6.5K</p></div>
-            <div class="cell"><p>8K</p></div>
-            <div class="cell"><p>9K</p></div>
-            <div class="cell"><p>8.5K</p></div>
-            <div class="cell" style="background:#ffe5e5; color:#b91c1c; font-weight:700;"><p>10K</p></div>
-        </div>
-
-        <div class="comparison-row">
-            <div class="feature-name">Company Incorporation</div>
-            <div class="cell highlight"style="color:#16a34a; font-weight:700;"><p>✔ 12.5K</p></div>
-            <div class="cell"><p>15K</p></div>
-            <div class="cell"><p>14K</p></div>
-            <div class="cell" style="background:#ffe5e5; color:#b91c1c; font-weight:700;"><p>17K</p></div>
-            <div class="cell"><p>15.5K</p></div>
-        </div>
-
-        <div class="comparison-row">
-            <div class="feature-name">Perks</div>
-            <div class="cell highlight"style="color:#16a34a; font-weight:700;"><p>✔ 6</p></div>
-            <div class="cell"><p>3</p></div>
-            <div class="cell"><p>4</p></div>
-            <div class="cell"style="background:#ffe5e5; color:#b91c1c; font-weight:700;"><p>0</p></div>
-            <div class="cell"style="background:#ffe5e5; color:#b91c1c; font-weight:700;"><p>0</p></div>
-        </div>
-
-        <div class="comparison-row">
-            <div class="feature-name">Google Score</div>
-            <div class="cell highlight"style="color:#16a34a; font-weight:700;">✔ 5.0</div>
-            <div class="cell">4.1</div>
-            <div class="cell">3.9</div>
-            <div class="cell">3.4</div>
-            <div class="cell" style="background:#ffe5e5; color:#b91c1c; font-weight:700;">2.7</div>
-        </div>
-
+<div class="containers">
+    <div class="table-wrapper">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>
+              <div class="header-content">
+                <!-- <div>Feature</div> -->
+                <div class="header-underline"></div>
+              </div>
+            </th>
+            <th>
+              <div class="header-content">
+                <div>Wealth Empires</div>
+                <div class="header-underline"></div>
+              </div>
+            </th>
+            <th>
+              <div class="header-content">
+                <div>India Filings <br> <br></div>
+                <div class="header-underline"></div>
+              </div>
+            </th>
+            <th>
+              <div class="header-content">
+                <div>Vakil Search <br> <br></div>
+                <div class="header-underline"></div>
+              </div>
+            </th>
+            <th>
+              <div class="header-content">
+                <div>Quick Company</div>
+                <div class="header-underline"></div>
+              </div>
+            </th>
+            <th>
+              <div class="header-content">
+                <div>Egnoil<br> <br></div>
+                <div class="header-underline"></div>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="feature-badge-wrapper">
+                <div class="feature-badge badge-mca">MCA Compliance</div>
+                <span class="arrow">›</span>
+              </div>
+            </td>
+            <td><div class="data-cell">22.5K</div></td>
+            <td><div class="data-cell">25.8K</div></td>
+            <td><div class="data-cell">28K</div></td>
+            <td><div class="data-cell">35K</div></td>
+            <td><div class="data-cell">30K</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="feature-badge-wrapper">
+                <div class="feature-badge badge-trademark">Trademark</div>
+                <span class="arrow">›</span>
+              </div>
+            </td>
+            <td><div class="data-cell">6.5K</div></td>
+            <td><div class="data-cell">8K</div></td>
+            <td><div class="data-cell">9K</div></td>
+            <td><div class="data-cell">8.5K</div></td>
+            <td><div class="data-cell">10K</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="feature-badge-wrapper">
+                <div class="feature-badge badge-company">Company Incorporation</div>
+                <span class="arrow">›</span>
+              </div>
+            </td>
+            <td><div class="data-cell">12.5K</div></td>
+            <td><div class="data-cell">15K</div></td>
+            <td><div class="data-cell">14K</div></td>
+            <td><div class="data-cell">17K</div></td>
+            <td><div class="data-cell">15.5K</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="feature-badge-wrapper">
+                <div class="feature-badge badge-perks">Perks</div>
+                <span class="arrow">›</span>
+              </div>
+            </td>
+            <td><div class="data-cell">6</div></td>
+            <td><div class="data-cell">3</div></td>
+            <td><div class="data-cell">4</div></td>
+            <td><div class="data-cell">0</div></td>
+            <td><div class="data-cell">0</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="feature-badge-wrapper">
+                <div class="feature-badge badge-google">Google Score</div>
+                <span class="arrow">›</span>
+              </div>
+            </td>
+            <td><div class="data-cell">5.0</div></td>
+            <td><div class="data-cell">4.1</div></td>
+            <td><div class="data-cell">3.9</div></td>
+            <td><div class="data-cell">3.4</div></td>
+            <td><div class="data-cell">2.7</div></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</div>
+  </div>
 <style>
-    .table-scroll-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    padding: 20px;
-}
+    /* .containers {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 24px;
+     
+    
+    } */
 
-.comparison-table {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    border-radius: 14px;
-    overflow: hidden;
-    border: 1px solid #e5e7eb;
-    background: #fff;
-}
+    .table-wrapper {
+        /* background-color: #0284c7; */
+      width: 100%;
+      overflow-x: auto;
+    }
 
-/* ROWS */
-.comparison-row {
-    display: flex;
-    border-bottom: 1px solid #f1f5f9;
-}
-
-.comparison-row:last-child {
-    border-bottom: none;
-}
-
-/* Header */
-.comparison-header {
-    background: #f8fafc;
-}
-
-.company-header {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-    font-weight: 700;
-    border-left: 1px solid #e2e8f0;
-}
-
-.company-title {
-    font-size: 16px;
-    font-weight: 700;
-    color: #0f172a;
-}
-.company-header.highlight {
-    background: #0f172a;
-    color: #fff !important;
-}
-
-
-
-/* Feature Name Column */
-.feature-name {
-    flex: 0 0 260px;
-    padding: 18px 20px;
-    font-weight: 600;
-    color: #1e293b;
-    background: #f8fafc;
-    border-right: 1px solid #e2e8f0;
-    display: flex;
-    align-items: center;
-}
-
-/* Cells */
-.cell {
-    flex: 1;
-    padding: 18px 20px;
-    text-align: center;
-    font-weight: 600;
-    color: #1e293b;
-}
-
-.cell.highlight {
-    background: #e0f2fe;
-    font-weight: 700;
-    color: #0c4a6e;
-}
-
-/* Zebra for better readability */
-.comparison-row:nth-child(even) .feature-name {
-    background: #f1f5f9;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
     .comparison-table {
-        min-width: 600px;
+        /* background-color: #ff00dd; */
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      padding: 24px;
     }
 
-    .feature-name {
-        flex: 0 0 180px;
+    /* Header Row */
+    .comparison-table thead th {
+      padding: 16px 20px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1f2937;
+      position: relative;
+    }
+
+    .comparison-table thead th:first-child {
+      text-align: left;
+      padding-left: 0;
+    }
+
+    .header-content {
+      display: inline-block;
+    }
+
+    .header-underline {
+      height: 4px;
+      background: linear-gradient(90deg, #000000, #c9a961);
+      border-radius: 2px;
+      margin-top: 8px;
+      width: 100%;
+    }
+
+    /* Body Rows */
+    .comparison-table tbody tr {
+      margin-bottom: 16px;
+    }
+
+    .comparison-table tbody td {
+      padding: 12px 20px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .comparison-table tbody td:first-child {
+      text-align: left;
+      padding-left: 0;
+      padding-right: 24px;
+    }
+
+    /* Feature Badge Column */
+    .feature-badge-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .feature-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 32px;
+      border-radius: 100px;
+      color: white;
+      font-weight: 600;
+      font-size: 15px;
+      white-space: nowrap;
+      min-width: 240px;
+    }
+
+    .badge-mca { background-color: rgb(65, 65, 65) }
+    .badge-trademark { background-color: rgb(50, 50, 50) }
+    .badge-company { background-color: rgb(32, 32, 32) }
+    .badge-perks { background-color: rgb(18, 18, 18) }
+    .badge-google { background-color: black }
+
+    .arrow {
+      color: #000000;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Data Cells */
+    .data-cell {
+      background: #f9fafb;
+      border-radius: 12px;
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #111827;
+      /* border: 1px solid #e5e7eb; */
+      min-width: 100px;
+    }
+
+    /* Spacing between rows */
+    .comparison-table tbody tr td {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .container {
+        padding: 32px 24px;
+      }
+
+      .feature-badge {
+        min-width: 180px;
+        padding: 10px 24px;
         font-size: 14px;
-        padding: 14px;
-    }
+      }
 
-    .company-header, .cell {
+      .comparison-table thead th,
+      .comparison-table tbody td {
+        padding: 10px 12px;
         font-size: 14px;
-        padding: 14px;
-    }
-}
+      }
 
-</style>
+      .data-cell {
+        padding: 12px 16px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 24px 16px;
+      }
+
+      .feature-badge {
+        min-width: 140px;
+        padding: 8px 16px;
+        font-size: 13px;
+      }
+
+      .comparison-table thead th,
+      .comparison-table tbody td {
+        padding: 8px 10px;
+        font-size: 13px;
+      }
+
+      .data-cell {
+        padding: 10px 12px;
+        font-size: 13px;
+      }
+
+      .arrow {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+
 
     <div class="cta-buttons">
         <a href="contact.html"><button class="btn-primary">Get Started</button></a>
@@ -792,15 +897,13 @@
                     .testimonial-hero-section {
                         /* margin: 24px 24px 8px 24px; */
                         /* padding: 60px 0; */
-                        min-height: 450px;
                         background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
                         }
 
                         .containers-testimonial {
-                        max-width: 1200px;
+                        max-width: 1400px;
                         margin: 0 auto;
                         padding: 0 20px;
-                        
                         }
 
                         .testimonial-header {
@@ -903,295 +1006,367 @@
 
             <!-- Testimonial Cards -->
             <!-- Testimonials Section -->
-<div class="testimonial-hero-section" >
-    <div class="container" style="margin-top: -16rem !important;">
-        <!-- Section Header -->
-        <div class="testimonial-grid">
+<div class="testimonial-hero-section">
+        <div class="container">
+            <div class="testimonial-grid">
 
-    <!-- CARD 1 -->
-    <div class="customer-card" data-testimonial="1">
-        <div class="card-expanded-layout">
+                <!-- CARD 1 -->
+                <div class="customer-card" data-testimonial="1">
+                    <div class="card-expanded-layout">
+                        <img class="person-img"
+                            src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=500&fit=crop&crop=face"
+                            alt="Testimonial Person">
 
-            <img class="person-img"
-                src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=500&fit=crop&crop=face"
-                alt="Testimonial Person">
+                        <div class="right-content">
+                            <div class="star">✦</div>
 
-            <div class="right-content">
-                <div class="star">✦</div>
+                            <p class="testimonial-text">
+                                We're now operating leaner and more efficiently than ever before.
+                                WealthEmpires has truly transformed our business!
+                            </p>
 
-                <p class="testimonial-text">
-                    We're now operating leaner and more efficiently than ever before.
-                    WealthEmpires has truly transformed our business!
-                </p>
-
-                <div class="author">
-                    <h4>Steven Rumancik</h4>
-                    <p>CEO, Peak Technology</p>
+                            <div class="author">
+                                <h4>Steven Rumancik</h4>
+                                <p>CEO, Peak Technology</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
+                <!-- CARD 2 -->
+                <div class="customer-card" data-testimonial="2">
+                    <div class="card-expanded-layout">
+                        <img class="person-img"
+                            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop&crop=face"
+                            alt="Testimonial Person">
+
+                        <div class="right-content">
+                            <div class="star">✦</div>
+
+                            <p class="testimonial-text">
+                                WealthEmpires is incredibly intuitive and has streamlined our workflow significantly.
+                            </p>
+
+                            <div class="author">
+                                <h4>Sarah Miller</h4>
+                                <p>Director of Operations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="customer-card" data-testimonial="3">
+                    <div class="card-expanded-layout">
+                        <img class="person-img"
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&crop=face"
+                            alt="Testimonial Person">
+
+                        <div class="right-content">
+                            <div class="star">✦</div>
+
+                            <p class="testimonial-text">
+                                With WealthEmpires we found a platform that integrates easily and helps manage projects beautifully.
+                            </p>
+
+                            <div class="author">
+                                <h4>Wes Ulmer</h4>
+                                <p>CEO, BD Tech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="customer-card" data-testimonial="2">
-        <div class="card-expanded-layout">
+    <script>
+        const cards = document.querySelectorAll(".customer-card");
 
-            <img class="person-img"
-                src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop&crop=face"
-                alt="Testimonial Person">
+        cards.forEach((card, index) => {
+            card.addEventListener("click", () => {
+                // Remove all states
+                cards.forEach(c =>
+                    c.classList.remove("active", "shift-left", "shift-right")
+                );
 
-            <div class="right-content">
-                <div class="star">✦</div>
+                // Activate clicked card
+                card.classList.add("active");
 
-                <p class="testimonial-text">
-                    WealthEmpires is incredibly intuitive and has streamlined our workflow significantly.
-                </p>
-
-                <div class="author">
-                    <h4>Sarah Miller</h4>
-                    <p>Director of Operations</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="customer-card" data-testimonial="3">
-        <div class="card-expanded-layout">
-
-            <img class="person-img"
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&crop=face"
-                alt="Testimonial Person">
-
-            <div class="right-content">
-                <div class="star">✦</div>
-
-                <p class="testimonial-text">
-                    With WealthEmpires we found a platform that integrates easily and helps manage projects beautifully.
-                </p>
-
-                <div class="author">
-                    <h4>Wes Ulmer</h4>
-                    <p>CEO, BD Tech</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
+                // Apply shift to other cards
+                cards.forEach((c, i) => {
+                    if (i < index) c.classList.add("shift-left");
+                    else if (i > index) c.classList.add("shift-right");
+                });
+            });
+        });
+    </script>
 
 
 
-        <!-- Testimonials Grid -->
-        
-    </div>
-</div>
 
 <style>
-    .testimonial-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
+    .testimonial-hero-section {
+            width: 100%;
+            overflow: hidden;
+        }
 
-/* Base card */
-.customer-card {
-    width: 260px;
-    background: #fff;
-    border-radius: 22px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: width 0.35s ease, transform 0.35s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-}
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
 
-/* Expanded card */
-.customer-card.active {
-    width: 650px;
-}
+        .testimonial-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
 
-/* Expanded layout */
-.card-expanded-layout {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+        /* Base card */
+        .customer-card {
+            width: 260px;
+            background: #fff;
+            border-radius: 22px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            position: relative;
+        }
 
-/* Image */
-.person-img {
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-}
+        /* Expanded card */
+        .customer-card.active {
+            width: 650px;
+        }
 
-/* Right side content */
-.right-content {
-    flex: 1;
-    padding: 20px 10px 20px 0;
-}
+        /* Expanded layout */
+        .card-expanded-layout {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            height: 300px;
+        }
 
-/* Star */
-.star {
-    font-size: 20px;
-    color: #ff3366;
-    margin-bottom: 10px;
-}
+        /* Image */
+        .person-img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px 0 0 20px;
+            flex-shrink: 0;
+        }
 
-.testimonial-text {
-    font-size: 17px;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 20px;
+        /* Right side content */
+        .right-content {
+            flex: 1;
+            padding: 20px 30px 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 0;
+            overflow: hidden;
+            width: 350px;
+        }
 
-    /* hidden initially */
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.35s ease, max-height 0.35s ease;
-}
+        /* Star */
+        .star {
+            font-size: 20px;
+            color: #ff3366;
+            margin-bottom: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: none;
+        }
 
-.customer-card.active .testimonial-text {
-    opacity: 1;
-    max-height: 300px;
-}
+        .customer-card.active .star {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: opacity 0.35s ease 0.45s, transform 0.35s ease 0.45s, visibility 0s 0.45s;
+        }
 
-/* Author */
-.author h4 {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0;
-}
+        .testimonial-text {
+            font-size: 17px;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 20px;
+            white-space: normal;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: none;
+            pointer-events: none;
+        }
 
-.author p {
-    margin: 3px 0 0 0;
-    color: #596579;
-}
+        .customer-card.active .testimonial-text {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: opacity 0.35s ease 0.45s, transform 0.35s ease 0.45s, visibility 0s 0.45s;
+            pointer-events: auto;
+        }
 
-/* Shift effects */
-.shift-left {
-    transform: translateX(-100px);
-}
+        /* Author */
+        .author {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: none;
+        }
 
-.shift-right {
-    transform: translateX(100px);
-}
-@media (max-width: 768px) {
+        .customer-card.active .author {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: opacity 0.35s ease 0.45s, transform 0.35s ease 0.45s, visibility 0s 0.45s;
+        }
 
-    .testimonial-grid {
-        flex-direction: column;
-        gap: 25px;
-        align-items: center;
-    }
+        .author h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0;
+        }
 
-    .customer-card {
-        width: 100%;
-        max-width: 420px;
-        transition: none; /* prevent jumpy animations */
-    }
+        .author p {
+            margin: 3px 0 0 0;
+            color: #596579;
+        }
 
-    .customer-card.active {
-        width: 100%;
-    }
+        /* Shift effects */
+        .shift-left {
+            transform: translateX(-100px);
+        }
 
-    /* Layout becomes vertical */
-    .card-expanded-layout {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
+        .shift-right {
+            transform: translateX(100px);
+        }
 
-    /* Image FULL width on mobile */
-    .person-img {
-        width: 100%;
-        height: 260px;
-        border-radius: 20px;
-    }
+        @media (max-width: 768px) {
+            .testimonial-grid {
+                flex-direction: column;
+                gap: 25px;
+                align-items: center;
+            }
 
-    /* Show content normally */
-    .testimonial-text {
-        max-height: 500px;
-        opacity: 1;
-        padding: 0 10px;
-        text-align: center;
-    }
+            .customer-card {
+                width: 100%;
+                max-width: 100%;
+                transition: none;
+            }
 
-    /* Remove shifting animation on mobile */
-    .shift-left, .shift-right {
-        transform: none;
-    }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
+            .customer-card.active {
+                width: 100%;
+            }
 
-    .customer-card {
-        width: 200px;
-    }
+            .card-expanded-layout {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+                height: auto;
+                width: 100%;
+            }
 
-    .customer-card.active {
-        width: 500px;
-    }
+            .person-img {
+                width: 100%;
+                height: 260px;
+                border-radius: 20px 20px 0 0;
+            }
 
-    .person-img {
-        width: 200px;
-        height: 250px;
-    }
+            .star {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                transition: none;
+            }
 
-    .right-content {
-        padding-right: 5px;
-    }
+            .author {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                transition: none;
+            }
 
-    .testimonial-text {
-        font-size: 15px;
-    }
-}
-@media (min-width: 1400px) {
-    .customer-card.active {
-        width: 700px;
-    }
+            .testimonial-text {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                padding: 0 10px;
+                text-align: center;
+                pointer-events: auto;
+                transition: none;
+            }
 
-    .person-img {
-        width: 280px;
-        height: 330px;
-    }
+            .right-content {
+                padding: 20px;
+                width: 100%;
+            }
 
-    .testimonial-text {
-        font-size: 18px;
-    }
-}
+            .shift-left, .shift-right {
+                transform: none;
+            }
+        }
 
-</style>
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .customer-card {
+                width: 200px;
+            }
 
-<script>
-const cards = document.querySelectorAll(".customer-card");
+            .customer-card.active {
+                width: 500px;
+            }
 
-cards.forEach((card, index) => {
-    card.addEventListener("click", () => {
+            .person-img {
+                width: 200px;
+                height: 250px;
+            }
 
-        cards.forEach(c =>
-            c.classList.remove("active", "shift-left", "shift-right")
-        );
+            .card-expanded-layout {
+                height: 250px;
+            }
 
-        card.classList.add("active");
+            .right-content {
+                padding-right: 15px;
+                width: 270px;
+            }
 
-        cards.forEach((c, i) => {
-            if (i < index) c.classList.add("shift-left");
-            else if (i > index) c.classList.add("shift-right");
-        });
-    });
-});
+            .testimonial-text {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .customer-card.active {
+                width: 700px;
+            }
+
+            .person-img {
+                width: 280px;
+                height: 330px;
+            }
+
+            .card-expanded-layout {
+                height: 330px;
+            }
+
+            .right-content {
+                width: 380px;
+            }
+
+            .testimonial-text {
+                font-size: 18px;
+            }
+        }
+    </style>
+    
 
 
-
-</script>
 
 
         
     </section>
-
 
     <section style="background: #ffffff; padding: 0px;">
         <div class="container">
@@ -1427,15 +1602,16 @@ cards.forEach((card, index) => {
     </script>
     
         <!-- CTA Section (centered dark hero) -->
-    <section class="cta-hero-section" style="margin: 82px; border-radius: 28px; position: relative; overflow: hidden; background: #0f1724; color: #fff;">
+    <section class="cta-hero-section" style="margin: 82px; border-radius: 28px; position: relative; overflow: hidden; background: #0f1724; color: #fff; margin-left: 4rem;">
         <style>
             .cta-wrap { max-width:1200px; margin:0 auto; padding:44px 36px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:22px; }
             .cta-badge { background: #666; color: rgba(255,255,255,0.92); padding:8px 18px; border-radius:999px; font-weight:700; letter-spacing:1px; font-size:14px; }
-            .cta-title { font-size:48px; line-height:1.0; margin:0; font-weight:700; font-family: Questrial, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; }
+            .cta-title { font-size:48px; line-height:0.80; margin:0; font-weight:700; font-family: Questrial, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; }
             .cta-sub { max-width:920px; color: rgba(255,255,255,0.78); font-size:18px; margin:0; }
             .cta-actions { display:flex; gap:18px; margin-top:6px; }
            
-            .btn-outline { background:#000000; color: #666; padding:12px 30px;border:2px solid #fff; text-decoration:none; font-weight:700; }
+            .btn-outline { background:transparent; color: rgba(255,255,255,0.92); padding:12px 30px;border:2px solid #fff; text-decoration:none; font-weight:700; }
+            .btn-outline:hover{ transform: translateY(-2px); border-color:#fff; background: rgba(255, 255, 255, 0) !important;}
             .btn-pri { background:#fff; color: #000; padding:12px 30px;border:2px solid #fff; text-decoration:none; font-weight:700; }
             .btn-pri:hover{ transform: translateY(-2px); border-color:#fff; }
 
@@ -1454,17 +1630,29 @@ cards.forEach((card, index) => {
 
         <div class="cta-wrap">
             <div class="cta-badge">#PEOPLEFIRSTCULTURE</div>
-            <h2 class="cta-title">India's No.1 Startup<br>friendly auditing firm</h2>
+            <h2 class="cta-title">India's No.1 Startup </h2>
+            <h2 class="cta-title">friendly auditing firm</h2>
             <div class="cta-actions" role="group" aria-label="Call to actions">
                 <a class="btn-pri" href="contact.html">Start incorporation</a>
-                <a class="btn-outline" href="contact.html"">Get in Touch</a>
+                <a class="btn-outline" href="contact.html">Get in Touch</a>
             </div>
         </div>
+
     </section>
 
 <!-- Footer -->
     <style>
+        .mail-support{
+            
+            padding-left: 1rem;
+            border-left: #1a6ec4 1px solid;
+        }
         @media (max-width: 768px) {
+            .mail-support{
+            
+            padding-left: 0rem;
+            border-left: #1a6ec4 0px solid;
+        }
             /* Stack header items vertically */
             .footer-header-content {
                 flex-direction: column;
@@ -1598,7 +1786,7 @@ cards.forEach((card, index) => {
                     <div class="contact-section">
                         <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
                     </div>
-                    <div class="mail-support">
+                    <div class="mail-support" style="transform: translateY(-1px) !important;">
                         <a href="mailto:support@wealthempires.in" class="support-email">
                             support@wealthempires.in
                         </a>

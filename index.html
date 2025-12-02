@@ -2164,7 +2164,7 @@
                         }
 
                         .containers-testimonial {
-                        max-width: 1200px;
+                        max-width: 1400px;
                         margin: 0 auto;
                         padding: 0 20px;
                         }
@@ -2269,290 +2269,363 @@
 
             <!-- Testimonial Cards -->
             <!-- Testimonials Section -->
-<div class="testimonial-hero-section" >
-    <div class="container">
-        <!-- Section Header -->
-        <div class="testimonial-grid">
+<div class="testimonial-hero-section">
+        <div class="container">
+            <div class="testimonial-grid">
 
-    <!-- CARD 1 -->
-    <div class="customer-card" data-testimonial="1">
-        <div class="card-expanded-layout">
+                <!-- CARD 1 -->
+                <div class="customer-card" data-testimonial="1">
+                    <div class="card-expanded-layout">
+                        <img class="person-img"
+                            src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=500&fit=crop&crop=face"
+                            alt="Testimonial Person">
 
-            <img class="person-img"
-                src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=500&fit=crop&crop=face"
-                alt="Testimonial Person">
+                        <div class="right-content">
+                            <div class="star">✦</div>
 
-            <div class="right-content">
-                <div class="star">✦</div>
+                            <p class="testimonial-text">
+                                We're now operating leaner and more efficiently than ever before.
+                                WealthEmpires has truly transformed our business!
+                            </p>
 
-                <p class="testimonial-text">
-                    We're now operating leaner and more efficiently than ever before.
-                    WealthEmpires has truly transformed our business!
-                </p>
-
-                <div class="author">
-                    <h4>Steven Rumancik</h4>
-                    <p>CEO, Peak Technology</p>
+                            <div class="author">
+                                <h4>Steven Rumancik</h4>
+                                <p>CEO, Peak Technology</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
+                <!-- CARD 2 -->
+                <div class="customer-card" data-testimonial="2">
+                    <div class="card-expanded-layout">
+                        <img class="person-img"
+                            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop&crop=face"
+                            alt="Testimonial Person">
+
+                        <div class="right-content">
+                            <div class="star">✦</div>
+
+                            <p class="testimonial-text">
+                                WealthEmpires is incredibly intuitive and has streamlined our workflow significantly.
+                            </p>
+
+                            <div class="author">
+                                <h4>Sarah Miller</h4>
+                                <p>Director of Operations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="customer-card" data-testimonial="3">
+                    <div class="card-expanded-layout">
+                        <img class="person-img"
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&crop=face"
+                            alt="Testimonial Person">
+
+                        <div class="right-content">
+                            <div class="star">✦</div>
+
+                            <p class="testimonial-text">
+                                With WealthEmpires we found a platform that integrates easily and helps manage projects beautifully.
+                            </p>
+
+                            <div class="author">
+                                <h4>Wes Ulmer</h4>
+                                <p>CEO, BD Tech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="customer-card" data-testimonial="2">
-        <div class="card-expanded-layout">
+    <script>
+        const cards = document.querySelectorAll(".customer-card");
 
-            <img class="person-img"
-                src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop&crop=face"
-                alt="Testimonial Person">
+        cards.forEach((card, index) => {
+            card.addEventListener("click", () => {
+                // Remove all states
+                cards.forEach(c =>
+                    c.classList.remove("active", "shift-left", "shift-right")
+                );
 
-            <div class="right-content">
-                <div class="star">✦</div>
+                // Activate clicked card
+                card.classList.add("active");
 
-                <p class="testimonial-text">
-                    WealthEmpires is incredibly intuitive and has streamlined our workflow significantly.
-                </p>
-
-                <div class="author">
-                    <h4>Sarah Miller</h4>
-                    <p>Director of Operations</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="customer-card" data-testimonial="3">
-        <div class="card-expanded-layout">
-
-            <img class="person-img"
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&crop=face"
-                alt="Testimonial Person">
-
-            <div class="right-content">
-                <div class="star">✦</div>
-
-                <p class="testimonial-text">
-                    With WealthEmpires we found a platform that integrates easily and helps manage projects beautifully.
-                </p>
-
-                <div class="author">
-                    <h4>Wes Ulmer</h4>
-                    <p>CEO, BD Tech</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
+                // Apply shift to other cards
+                cards.forEach((c, i) => {
+                    if (i < index) c.classList.add("shift-left");
+                    else if (i > index) c.classList.add("shift-right");
+                });
+            });
+        });
+    </script>
 
 
 
-        <!-- Testimonials Grid -->
-        
-    </div>
-</div>
 
 <style>
-    .testimonial-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
+    .testimonial-hero-section {
+            width: 100%;
+            overflow: hidden;
+        }
 
-/* Base card */
-.customer-card {
-    width: 260px;
-    background: #fff;
-    border-radius: 22px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: width 0.35s ease, transform 0.35s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-}
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
 
-/* Expanded card */
-.customer-card.active {
-    width: 650px;
-}
+        .testimonial-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
 
-/* Expanded layout */
-.card-expanded-layout {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+        /* Base card */
+        .customer-card {
+            width: 260px;
+            background: #fff;
+            border-radius: 22px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            position: relative;
+        }
 
-/* Image */
-.person-img {
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-}
+        /* Expanded card */
+        .customer-card.active {
+            width: 650px;
+        }
 
-/* Right side content */
-.right-content {
-    flex: 1;
-    padding: 20px 10px 20px 0;
-}
+        /* Expanded layout */
+        .card-expanded-layout {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            height: 300px;
+        }
 
-/* Star */
-.star {
-    font-size: 20px;
-    color: #ff3366;
-    margin-bottom: 10px;
-}
+        /* Image */
+        .person-img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px 0 0 20px;
+            flex-shrink: 0;
+        }
 
-.testimonial-text {
-    font-size: 17px;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 20px;
+        /* Right side content */
+        .right-content {
+            flex: 1;
+            padding: 20px 30px 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 0;
+            overflow: hidden;
+            width: 350px;
+        }
 
-    /* hidden initially */
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.35s ease, max-height 0.35s ease;
-}
+        /* Star */
+        .star {
+            font-size: 20px;
+            color: #ff3366;
+            margin-bottom: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: none;
+        }
 
-.customer-card.active .testimonial-text {
-    opacity: 1;
-    max-height: 300px;
-}
+        .customer-card.active .star {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: opacity 0.35s ease 0.45s, transform 0.35s ease 0.45s, visibility 0s 0.45s;
+        }
 
-/* Author */
-.author h4 {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0;
-}
+        .testimonial-text {
+            font-size: 17px;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 20px;
+            white-space: normal;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: none;
+            pointer-events: none;
+        }
 
-.author p {
-    margin: 3px 0 0 0;
-    color: #596579;
-}
+        .customer-card.active .testimonial-text {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: opacity 0.35s ease 0.45s, transform 0.35s ease 0.45s, visibility 0s 0.45s;
+            pointer-events: auto;
+        }
 
-/* Shift effects */
-.shift-left {
-    transform: translateX(-100px);
-}
+        /* Author */
+        .author {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: none;
+        }
 
-.shift-right {
-    transform: translateX(100px);
-}
-@media (max-width: 768px) {
+        .customer-card.active .author {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: opacity 0.35s ease 0.45s, transform 0.35s ease 0.45s, visibility 0s 0.45s;
+        }
 
-    .testimonial-grid {
-        flex-direction: column;
-        gap: 25px;
-        align-items: center;
-    }
+        .author h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0;
+        }
 
-    .customer-card {
-        width: 100%;
-        max-width: 420px;
-        transition: none; /* prevent jumpy animations */
-    }
+        .author p {
+            margin: 3px 0 0 0;
+            color: #596579;
+        }
 
-    .customer-card.active {
-        width: 100%;
-    }
+        /* Shift effects */
+        .shift-left {
+            transform: translateX(-100px);
+        }
 
-    /* Layout becomes vertical */
-    .card-expanded-layout {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
+        .shift-right {
+            transform: translateX(100px);
+        }
 
-    /* Image FULL width on mobile */
-    .person-img {
-        width: 100%;
-        height: 260px;
-        border-radius: 20px;
-    }
+        @media (max-width: 768px) {
+            .testimonial-grid {
+                flex-direction: column;
+                gap: 25px;
+                align-items: center;
+            }
 
-    /* Show content normally */
-    .testimonial-text {
-        max-height: 500px;
-        opacity: 1;
-        padding: 0 10px;
-        text-align: center;
-    }
+            .customer-card {
+                width: 100%;
+                max-width: 100%;
+                transition: none;
+            }
 
-    /* Remove shifting animation on mobile */
-    .shift-left, .shift-right {
-        transform: none;
-    }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
+            .customer-card.active {
+                width: 100%;
+            }
 
-    .customer-card {
-        width: 200px;
-    }
+            .card-expanded-layout {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+                height: auto;
+                width: 100%;
+            }
 
-    .customer-card.active {
-        width: 500px;
-    }
+            .person-img {
+                width: 100%;
+                height: 260px;
+                border-radius: 20px 20px 0 0;
+            }
 
-    .person-img {
-        width: 200px;
-        height: 250px;
-    }
+            .star {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                transition: none;
+            }
 
-    .right-content {
-        padding-right: 5px;
-    }
+            .author {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                transition: none;
+            }
 
-    .testimonial-text {
-        font-size: 15px;
-    }
-}
-@media (min-width: 1400px) {
-    .customer-card.active {
-        width: 700px;
-    }
+            .testimonial-text {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                padding: 0 10px;
+                text-align: center;
+                pointer-events: auto;
+                transition: none;
+            }
 
-    .person-img {
-        width: 280px;
-        height: 330px;
-    }
+            .right-content {
+                padding: 20px;
+                width: 100%;
+            }
 
-    .testimonial-text {
-        font-size: 18px;
-    }
-}
+            .shift-left, .shift-right {
+                transform: none;
+            }
+        }
 
-</style>
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .customer-card {
+                width: 200px;
+            }
 
-<script>
-const cards = document.querySelectorAll(".customer-card");
+            .customer-card.active {
+                width: 500px;
+            }
 
-cards.forEach((card, index) => {
-    card.addEventListener("click", () => {
+            .person-img {
+                width: 200px;
+                height: 250px;
+            }
 
-        cards.forEach(c =>
-            c.classList.remove("active", "shift-left", "shift-right")
-        );
+            .card-expanded-layout {
+                height: 250px;
+            }
 
-        card.classList.add("active");
+            .right-content {
+                padding-right: 15px;
+                width: 270px;
+            }
 
-        cards.forEach((c, i) => {
-            if (i < index) c.classList.add("shift-left");
-            else if (i > index) c.classList.add("shift-right");
-        });
-    });
-});
+            .testimonial-text {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .customer-card.active {
+                width: 700px;
+            }
+
+            .person-img {
+                width: 280px;
+                height: 330px;
+            }
+
+            .card-expanded-layout {
+                height: 330px;
+            }
+
+            .right-content {
+                width: 380px;
+            }
+
+            .testimonial-text {
+                font-size: 18px;
+            }
+        }
+    </style>
+    
 
 
-
-</script>
 
 
         
@@ -2634,11 +2707,21 @@ cards.forEach((card, index) => {
 
     <!-- Footer -->
     <style>
+        .mail-support{
+            
+            padding-left: 1rem;
+            border-left: #1a6ec4 1px solid;
+        }
         @media (max-width: 768px) {
             /* Stack header items vertically */
             .footer-header-content {
                 flex-direction: column;
                 gap: 20px;
+            }
+            .mail-support{
+            
+                padding-left: 0rem;
+                border-left: #1a6ec4 0px solid;
             }
 
             .header-divider {
@@ -2768,8 +2851,8 @@ cards.forEach((card, index) => {
                     <div class="contact-section">
                         <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
                     </div>
-                    <div class="mail-support">
-                        <a href="mailto:support@wealthempires.in" class="support-email">
+                    <div class="mail-support" style="transform: translateY(-1px) !important;">
+                        <a href="mailto:support@wealthempires.in" class="support-email" >
                             support@wealthempires.in
                         </a>
                     </div>

@@ -599,7 +599,7 @@
                     <div class="contact-section">
                         <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
                     </div>
-                    <div class="mail-support">
+                    <div class="mail-support" style="transform: translateY(-1px) !important;">
                         <a href="mailto:support@wealthempires.in" class="support-email">
                             support@wealthempires.in
                         </a>
@@ -608,6 +608,11 @@
             </div>
         </div>
         <style>
+            .mail-support{
+            
+            padding-left: 1rem;
+            border-left: #1a6ec4 1px solid;
+        }
                 .header-divider {
                     display: flex;
                     flex-direction: row;
@@ -621,7 +626,11 @@
             gap: 12px;
         }
     }
-
+    .mail-support{
+            
+            padding-left: 0rem;
+            border-left: #1a6ec4 0px solid;
+        }
     /* Mobile */
     @media (max-width: 480px) {
         .header-divider {
