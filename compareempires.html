@@ -323,6 +323,10 @@
         /* Navigation handled by styles.css */
     </style>
      <style>
+        .cta-hero-section{
+            margin-left: 11rem !important;
+            margin-right: 11rem !important;
+        }
         /* Keep content from horizontally overflowing on small screens */
         @media (max-width: 900px) {
             .container { padding: 0 18px; }
@@ -389,7 +393,7 @@
                 </div>
                 <ul class="nav-links" id="navLinks">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="#" class="dropdown-toggle">Services <i id="services-dropdown-icon" class="fas fa-chevron-down text-xs transition-transform duration-200"></i></a>
                         <div class="dropdown-menu">
                             <a href="incorporation.html" class="dropdown-item">
                                 <span>Incorporation</span>
@@ -407,7 +411,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Our Product <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="#" class="dropdown-toggle">Our Product <i id="services-dropdown-icon" class="fas fa-chevron-down text-xs transition-transform duration-200"></i></a>
                         <div class="dropdown-menu">
                             <a href="https://aistartupdoctor.com/" class="dropdown-item">
                                 <span>Startup Doctor</span>
@@ -435,7 +439,7 @@
     <section class="hero-sections" style="margin-top: -30px; background-color: white !important;">
         <h1 class="main-title" style="font-family: Questrial;;">Stay Legally <span style="color: #7851A9;">Sound In</span> One Click!.</h1>
         <p class="subtitle">There's no reason to pay crazy high prices to start your business.</p>
-        <p class="subtitle-secondary">Wealth Empires does it worry-free, without the hidden fees.</p>
+        <p class="subtitle-secondary">Wealth Empires does it worry-free, <span style="color: #c9a961;">without the hidden fees.</span></p>
     </section>
 
     <!-- <div class="table-scroll-wrapper">
@@ -626,10 +630,10 @@
                 <span class="arrow">›</span>
               </div>
             </td>
-            <td><div class="data-cell">22.5K</div></td>
+            <td><div class="data-cell data-cells">22.5K</div></td>
             <td><div class="data-cell">25.8K</div></td>
             <td><div class="data-cell">28K</div></td>
-            <td><div class="data-cell">35K</div></td>
+            <td><div class="data-cell" >35K</div></td>
             <td><div class="data-cell">30K</div></td>
           </tr>
           <tr>
@@ -639,7 +643,7 @@
                 <span class="arrow">›</span>
               </div>
             </td>
-            <td><div class="data-cell">6.5K</div></td>
+            <td><div class="data-cell data-cells">6.5K</div></td>
             <td><div class="data-cell">8K</div></td>
             <td><div class="data-cell">9K</div></td>
             <td><div class="data-cell">8.5K</div></td>
@@ -652,7 +656,7 @@
                 <span class="arrow">›</span>
               </div>
             </td>
-            <td><div class="data-cell">12.5K</div></td>
+            <td><div class="data-cell data-cells">12.5K</div></td>
             <td><div class="data-cell">15K</div></td>
             <td><div class="data-cell">14K</div></td>
             <td><div class="data-cell">17K</div></td>
@@ -665,7 +669,7 @@
                 <span class="arrow">›</span>
               </div>
             </td>
-            <td><div class="data-cell">6</div></td>
+            <td><div class="data-cell data-cells">6</div></td>
             <td><div class="data-cell">3</div></td>
             <td><div class="data-cell">4</div></td>
             <td><div class="data-cell">0</div></td>
@@ -678,7 +682,7 @@
                 <span class="arrow">›</span>
               </div>
             </td>
-            <td><div class="data-cell">5.0</div></td>
+            <td><div class="data-cell data-cells">5.0</div></td>
             <td><div class="data-cell">4.1</div></td>
             <td><div class="data-cell">3.9</div></td>
             <td><div class="data-cell">3.4</div></td>
@@ -798,6 +802,10 @@
       color: #111827;
       /* border: 1px solid #e5e7eb; */
       min-width: 100px;
+    }
+    .data-cells {
+      background: #c9a961;
+
     }
 
     /* Spacing between rows */

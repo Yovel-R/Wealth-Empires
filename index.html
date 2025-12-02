@@ -144,7 +144,7 @@
         }
 
         .hero-content {
-            margin-top: 5rem;
+            margin-top: 3rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 80px;
@@ -1345,7 +1345,7 @@
         }
 
         @media (min-width: 1024px) {
-            .we-hero-card { min-height: 450px; }
+            .we-hero-card { min-height: 450px;}
         }
 
         /* CTA hero responsive tweaks */
@@ -1354,6 +1354,10 @@
             grid-template-columns: 1fr 1fr;
             gap: 28px;
             align-items: center;
+        }
+        .cta-hero-section{
+            margin-left: 11rem !important;
+            margin-right: 11rem !important;
         }
 
         @media (max-width: 768px) {
@@ -1403,25 +1407,25 @@
                 padding: 12px 20px !important;
                 font-size: 14px !important;
                 display: block !important;
-                border-radius: 50px !important;
+                border-radius: 0px !important;
                 text-decoration: none !important;
             }
 
             /* Enhanced button visibility without dark background */
-            .cta-hero-section a[href*="crm"] {
+            /* .cta-hero-section a[href*="crm"] {
                 background: #000 !important;
                 color: white !important;
                 border: 2px solid #000 !important;
                 box-shadow: 0 4px 15px rgba(0,0,0,0.4) !important;
-            }
+            } */
 
-            .cta-hero-section a[href*="contact"] {
+            /* .cta-hero-section a[href*="contact"] {
                 background: rgba(255, 255, 255, 0.95) !important;
                 color: #000 !important;
                 border: 2px solid rgba(255, 255, 255, 0.95) !important;
                 box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
                 backdrop-filter: blur(10px) !important;
-            }
+            } */
         }
 
         /* Smaller CTA for the hero card */
@@ -1549,10 +1553,10 @@
                 </div>
                 <ul class="nav-links" id="navLinks">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="#" class="dropdown-toggle">Services <i id="services-dropdown-icon" class="fas fa-chevron-down text-xs transition-transform duration-200"></i></a>
                         <div class="dropdown-menu">
                             <a href="incorporation.html" class="dropdown-item">
-                                <span>Incorporation</span>
+                                <span>Incorporation </span>
                             </a>
                             <a href="360-compliance.html" class="dropdown-item">
                                 <span>360° Compliance</span>
@@ -1567,7 +1571,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Our Product <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="#" class="dropdown-toggle">Our Product <i id="services-dropdown-icon" class="fas fa-chevron-down text-xs transition-transform duration-200"></i></a>
                         <div class="dropdown-menu">
                             <a href="https://aistartupdoctor.com/" class="dropdown-item">
                                 <span>Startup Doctor</span>
@@ -1633,8 +1637,8 @@
                 
                 <!-- Right Image -->
                 <div class="flex justify-center lg:justify-end">
-                    <div class="w-full max-w-lg rounded-3xl overflow-hidden   p-8">
-                        <img src="img/hero 1111.svg" alt="Startup Health Check Dashboard" class="w-full h-auto rounded-2xl object-cover">
+                    <div class="w-full max-w-lg rounded-3xl overflow-hidden   p-8 " >
+                        <img src="img/hero 1111.svg" alt="Startup Health Check Dashboard" class="w-full h-auto rounded-2xl object-cover" style="transform: translateY(-1.5rem);">
                     </div>
                 </div>
             </div>
@@ -1830,8 +1834,8 @@
                     <!-- Full-cover decorative background image (img/fa3.png) - behind content, covers card and respects rounded corners -->
                     <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none we-card-bg" aria-hidden="true">
                         <!-- make image clearer: increase brightness and reduce overlay darkness -->
-                        <img src="img/Build your dream.webp" alt="" class="w-full h-full object-cover" style="filter:brightness(0.92);" />
                         <!-- lighter dark gradient overlay to improve visibility of the image while keeping text readable -->
+                        <img src="img/suport.webp" alt="" class="w-full h-full object-cover" style="filter:brightness(0.92);" />
                         <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0, 0, 0, 0.057));"></div>
                     </div>
 
@@ -1856,7 +1860,7 @@
                     <!-- Full-cover decorative background image (img/fa3.png) - behind content, covers card and respects rounded corners -->
                     <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none we-card-bg" aria-hidden="true">
                         <!-- make image clearer: increase brightness and reduce overlay darkness -->
-                        <img src="img/comapre.webp" alt="" class="w-full h-full object-cover" style="filter:brightness(0.92);" />
+                        <img src="img/compare.webp" alt="" class="w-full h-full object-cover" style="filter:brightness(0.92);" />
                         <!-- lighter dark gradient overlay to improve visibility of the image while keeping text readable -->
                         <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.28));"></div>
                     </div>
@@ -2667,9 +2671,9 @@
             </div>
         </div>
     </section> -->
-    <section class="cta-hero-section" style="margin: 82px; border-radius: 28px; position: relative; overflow: hidden; background: #0f1724; color: #fff; margin-left: 4rem;">
+    <section class="cta-hero-section" style="margin: 82px; border-radius: 28px; position: relative; overflow: hidden; background: #0f1724; color: #fff;">
         <style>
-            .cta-wrap { max-width:1200px; margin:0 auto; padding:44px 36px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:22px; }
+            .cta-wrap { max-width:1200px; margin:0 auto; padding:44px 16px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:22px; }
             .cta-badge { background: #666; color: rgba(255,255,255,0.92); padding:8px 18px; border-radius:999px; font-weight:700; letter-spacing:1px; font-size:14px; }
             .cta-title { font-size:48px; line-height:0.80; margin:0; font-weight:700; font-family: Questrial, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; }
             .cta-sub { max-width:920px; color: rgba(255,255,255,0.78); font-size:18px; margin:0; }
@@ -2693,7 +2697,7 @@
             }
         </style>
 
-        <div class="cta-wrap">
+        <div class="cta-wrap" >
             <div class="cta-badge">#PEOPLEFIRSTCULTURE</div>
             <h2 class="cta-title">India's No.1 Startup </h2>
             <h2 class="cta-title">friendly auditing firm</h2>
@@ -3080,6 +3084,187 @@
             });
         }
     </script>
+    <footer id="seo-footer" style="
+  background-color: white; 
+  color: black; 
+  padding: 60px 40px 40px; 
+  font-family: Arial, sans-serif; 
+  line-height: 1.7;
+">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <!-- Main Title -->
+    <h1 style="color: #0d3d3d; font-size: 2.2em; margin-bottom: 30px; font-weight: bold;">
+      **Wealth Empires \| India's Most Trusted Compliance, Tax & Startup Advisory Partner**
+    </h1>
+    
+    <p style="color: black; font-size: 1.1em; margin-bottom: 25px; max-width: 800px;">
+      At Wealth Empires, we don't just provide services---we build a foundation of trust, intelligence, and business excellence.
+    </p>
+    
+    <p style="color: black; font-size: 1.1em; margin-bottom: 35px; max-width: 800px;">
+      As one of India's most dependable compliance and business consulting companies, we merge the precision of modern technology with the wisdom of seasoned experts. Our mission is simple: <strong style="color: #0d3d3d;">**empower businesses with seamless compliance, stress-free taxation, smart automation, and startup-friendly advisory---all under one roof.**</strong>
+    </p>
+    
+    <p style="color: black; font-size: 1.1em; margin-bottom: 50px; max-width: 800px;">
+      Whether you're a startup founder, a growing business, or a corporate entity, Wealth Empires ensures your legal, financial, and operational pillars remain strong, stable, and future-ready.
+    </p>
+
+    <!-- Trusted by 10,000+ Businesses -->
+    <section style="margin-bottom: 60px;">
+      <h2 style="color: #0d3d3d; font-size: 1.9em; margin-bottom: 20px; font-weight: bold;">
+        **Trusted by 10,000+ Businesses & Recommended by CA, CS, Lawyers & Investors**
+      </h2>
+      <p style="color: black; margin-bottom: 15px;">Compliance in India is complex but your journey doesn't have to be.</p>
+      <p style="color: black; margin-bottom: 15px;">Inspired by years of experience and real industry challenges, we built a 360-Degree Compliance System that covers everything from company formation to annual filings, tax reports, audits, and business certifications---ensuring your venture stays 100% compliant, always.</p>
+      <p style="color: black;">Our team follows strict Indian Accounting Standards (Ind-AS), ICAI guidelines, MCA norms, and RBI-SEBI regulations to deliver accuracy you can trust.</p>
+    </section>
+
+    <!-- Smart Compliance -->
+    <section style="margin-bottom: 60px;">
+      <h2 style="color: #0d3d3d; font-size: 1.9em; margin-bottom: 20px; font-weight: bold;">
+        **Smart Compliance, Powered by Technology**
+      </h2>
+      <p style="color: black; margin-bottom: 15px;">At Wealth Empires, every service is designed with technology at its heart.</p>
+      <p style="color: black; margin-bottom: 15px;">Our upcoming AI-powered platform---<strong style="color: #0d3d3d;">**WE CRM**</strong>---combines automation, reminders, document intelligence, and predictive compliance insights to ensure:</p>
+      <ul style="color: black; padding-left: 25px; margin-bottom: 15px;">
+        <li style="margin-bottom: 8px;">✔ No missed deadlines</li>
+        <li style="margin-bottom: 8px;">✔ Zero penalty risks</li>
+        <li style="margin-bottom: 8px;">✔ Faster filings</li>
+        <li style="margin-bottom: 8px;">✔ Automated documentation</li>
+        <li>✔ Real-time financial visibility</li>
+      </ul>
+      <p style="color: black;"><strong style="color: #0d3d3d;">Whether it's GST, Income Tax, ROC, TDS or Audits---**we make compliance effortless**.</strong></p>
+    </section>
+
+    <!-- Your Business, Legally Safe & Growth-Ready -->
+    <section style="margin-bottom: 60px;">
+      <h2 style="color: #0d3d3d; font-size: 1.9em; margin-bottom: 25px; font-weight: bold;">
+        **Your Business, Legally Safe & Growth-Ready**
+      </h2>
+      <p style="color: black; margin-bottom: 30px;">From registration to expansion, we're your full-stack business partner.<br>Our services ensure your startup is investor-friendly, audit-ready and legally strong.</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **Company Registration & Startup Consulting**</h3>
+          <p style="color: black;">Private Limited, LLP, OPC, Partnership, Section 8 Company, MSME Startup India registration---done with speed and accuracy.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **Accounting Services (As per Indian Accounting Standards)**</h3>
+          <p style="color: black;">We offer **complete bookkeeping, virtual CFO services, MIS reporting, payroll, budgeting, and financial forecasting** for businesses of all sizes.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **Taxation & GST Compliance**</h3>
+          <p style="color: black;">From GST returns to Income Tax planning, notices, assessments and refunds---our experts simplify tax burdens.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **Trademark & Intellectual Property**</h3>
+          <p style="color: black;">Protect your brand with smooth TM filing, objection reply, hearing assistance IP strategy.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **Auditing Services**</h3>
+          <p style="color: black;">Statutory, internal, stock, tax management audits executed with transparent reporting and strict compliance.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **Legal Drafting & Corporate Documentation**</h3>
+          <p style="color: black;">Shareholder agreements, vendor contracts, MoUs, NDAs, HR policies, ESOP structures---all drafted by experts.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **ISO Certifications**</h3>
+          <p style="color: black;">ISO 9001, 27001, 14001, 22000 and more---documentation, audits end-to-end certification support.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summer Season -->
+    <section style="margin-bottom: 60px;">
+      <h2 style="color: #0d3d3d; font-size: 1.9em; margin-bottom: 20px; font-weight: bold;">
+        **Summer Season for Businesses: Stay Legally Cool & Tax-Ready**
+      </h2>
+      <p style="color: black; margin-bottom: 15px;">The financial year-end and GST deadlines create heat for every business. That's why Wealth Empires provides a range of timely services to keep your business stress-free -</p>
+      <ul style="color: black; padding-left: 25px; margin-bottom: 15px;">
+        <li>Quarterly Annual Tax Filings</li>
+        <li>GST, TDS, PT ROC Calendar Management</li>
+        <li>Financial Statement Preparation</li>
+        <li>Audit Readiness Support</li>
+        <li>Advance Tax Investment Planning</li>
+      </ul>
+      <p style="color: black;">We help you stay compliant, organized and ready for every deadline.</p>
+    </section>
+
+    <!-- New Business Starter Pack -->
+    <section style="margin-bottom: 60px;">
+      <h2 style="color: #0d3d3d; font-size: 1.9em; margin-bottom: 20px; font-weight: bold;">
+        **New Business Starter Pack: Simple, Affordable & Founder-Friendly**
+      </h2>
+      <p style="color: black; margin-bottom: 15px;">Just launched your startup? We've got everything your business needs on Day 1.</p>
+      <h3 style="color: #0d3d3d; margin-bottom: 15px; font-size: 1.4em; font-weight: bold;">### **Starter Pack Includes:**</h3>
+      <ul style="color: black; padding-left: 25px; margin-bottom: 15px;">
+        <li>✔ Company Registration</li>
+        <li>✔ GST Registration</li>
+        <li>✔ Trademark Filing</li>
+        <li>✔ Accounting Setup</li>
+        <li>✔ Legal Drafting MoU, NDA, Founder Agreement</li>
+        <li>✔ Domain Email Business Collaterals</li>
+      </ul>
+      <p style="color: black;">Perfect for new entrepreneurs who want everything in one trusted place.</p>
+    </section>
+
+    <!-- Everyday Business Essentials -->
+    <section>
+      <h2 style="color: #0d3d3d; font-size: 1.9em; margin-bottom: 30px; font-weight: bold;">
+        **Everyday Business Essentials at Wealth Empires**
+      </h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **1. Accounting & Bookkeeping**</h3>
+          <p style="color: black;">Daily, weekly, or monthly packages including ledger maintenance, reconciliations, MIS, PL reports financial dashboards.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **2. GST & Tax Filings**</h3>
+          <p style="color: black;">GST return filing, IT returns, notice handling, assessments, cancellations appeals.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **3. Compliance & ROC Filings**</h3>
+          <p style="color: black;">AOC-4, MGT-7, DIR-3 KYC, event-based filings, share allotments, board resolutions annual filings.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **4. Audit Services**</h3>
+          <p style="color: black;">Internal audit, statutory audit, GST audit, stock audit, and forensic audit.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **5. Trademark & IP**</h3>
+          <p style="color: black;">TM filing, copyright, patent facilitation, IP protection, watch services brand defense.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **6. Certifications**</h3>
+          <p style="color: black;">ISO, MSME, FSSAI, Startup India certification import-export code IEC.</p>
+        </div>
+        <div style="padding: 25px; border-left: 4px solid #0d3d3d; background: #f8f9fa;">
+          <h3 style="color: #0d3d3d; margin-bottom: 12px; font-size: 1.3em; font-weight: bold;">### **7. Legal Support**</h3>
+          <p style="color: black;">Contracts, policies, business agreements, employment documents, partnership deeds more.</p>
+        </div>
+      </div>
+      <p style="color: black; font-size: 1.2em; margin-top: 30px; font-style: italic;">
+        At Wealth Empires, we don't just support businesses. we protect them, power them, and prepare them for long-term success.
+      </p>
+    </section>
+  </div>
+
+  <style>
+    @media (max-width: 768px) {
+      #seo-footer { padding: 40px 20px 30px; }
+      #seo-footer h1 { font-size: 1.8em; }
+      #seo-footer h2, #seo-footer h3 { font-size: 1.5em; }
+      #seo-footer p { font-size: 1em; }
+    }
+    @media (max-width: 480px) {
+      #seo-footer { padding: 30px 15px 25px; }
+      #seo-footer h1 { font-size: 1.5em; }
+      #seo-footer h2 { font-size: 1.4em; }
+    }
+  </style>
+</footer>
+
 </body>
 
 </html>

@@ -8,7 +8,9 @@
     <link rel="icon" type="image/jpeg" href="Wealth Empires.jpg">
     <link rel="shortcut icon" type="image/jpeg" href="Wealth Empires.jpg">
     <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script type="application/ld+json">
+        
 {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -837,6 +839,10 @@
         /* Process styles moved to styles.css (modern, responsive, monochrome) */
     </style>
      <style>
+        .cta-hero-section{
+            margin-left: 11rem !important;
+            margin-right: 11rem !important;
+        }
         /* Keep content from horizontally overflowing on small screens */
         @media (max-width: 900px) {
             .container { padding: 0 18px; }
@@ -903,7 +909,7 @@
                 </div>
                 <ul class="nav-links" id="navLinks">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Services <span class="dropdown-arrow">▼</span></a>
+                        <a href="#" class="dropdown-toggle">Services <i id="services-dropdown-icon" class="fas fa-chevron-down text-xs transition-transform duration-200"></i></a>
                         <div class="dropdown-menu">
                             <a href="incorporation.html" class="dropdown-item">
                                 <span>Incorporation</span>
@@ -921,7 +927,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Our Product <span class="dropdown-arrow">▼</span></a>
+                        <a href="#" class="dropdown-toggle">Our Product <i id="services-dropdown-icon" class="fas fa-chevron-down text-xs transition-transform duration-200"></i></a>
                         <div class="dropdown-menu">
                             <a href="https://aistartupdoctor.com/" class="dropdown-item">
                                 <span>Startup Doctor</span>
@@ -984,7 +990,7 @@
             </div>
             <style>
                 .highlight-textes {
-                    background-color: #c9a961;
+                    background-color: #f3cf7c;
                     border-radius: 1rem;
                     padding: 4px;
                 }
