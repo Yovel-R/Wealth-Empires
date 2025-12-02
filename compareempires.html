@@ -873,7 +873,7 @@
     </div>
 <!-- Testimonial Section -->
     <section class="testimonial-hero-section " style="padding: 60px 0; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
-        <div class="containers-testiminial" style="max-width: 600rem!important; margin: 0 auto; padding: 0 20px;">
+        <div class="containers-testiminial" style="max-width: 1400px !important; margin: 0 auto; padding: 0 30px;">
             <!-- Header with Awards -->
             <section class="testimonial-hero-section">
                 <div class="containers-testimonial">
@@ -978,7 +978,7 @@
                         /* Mobile */
                         @media (max-width: 768px) {
                         .testimonial-hero-section {
-                            margin: 16px 12px 0 12px;
+                            /* margin: 16px 12px 0 12px; */
                             padding: 32px 0;
                         }
 
@@ -1251,8 +1251,17 @@
         .shift-right {
             transform: translateX(100px);
         }
+        .containers-testiminial,
+.containers-testimonial {
+    padding: 0 12px;
+}
 
         @media (max-width: 768px) {
+            .containers-testiminial,
+            .containers-testimonial {
+                padding: 0 16px;
+                transform: translate(-1rem);
+            }
             .testimonial-grid {
                 flex-direction: column;
                 gap: 25px;
@@ -1367,6 +1376,43 @@
                 font-size: 18px;
             }
         }
+        /* --- FIX: Prevent horizontal overflow --- */
+body, html,
+.testimonial-hero-section,
+.containers-testiminial,
+.containers-testimonial,
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Allow cards to wrap so no horizontal scrolling occurs */
+.testimonial-grid {
+    flex-wrap: wrap !important;
+}
+
+/* Prevent shift animation from pushing cards out of screen */
+.shift-left,
+.shift-right {
+    transform: translateX(0) !important;
+}
+
+/* Ensure expanded card never exceeds screen width */
+.customer-card.active {
+    max-width: 100% !important;
+}
+
+/* Fix image pushing width */
+.person-img {
+    max-width: 100% !important;
+}
+
+/* Prevent nested sections from creating extra width */
+.testimonial-hero-section section {
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
     </style>
     
 

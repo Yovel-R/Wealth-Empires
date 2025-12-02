@@ -1556,7 +1556,7 @@
                         <a href="#" class="dropdown-toggle">Services <i id="services-dropdown-icon" class="fas fa-chevron-down text-xs transition-transform duration-200"></i></a>
                         <div class="dropdown-menu">
                             <a href="incorporation.html" class="dropdown-item">
-                                <span>Incorporation </span>
+                                <span>Incorporation</span>
                             </a>
                             <a href="360-compliance.html" class="dropdown-item">
                                 <span>360° Compliance</span>
@@ -1584,7 +1584,7 @@
                     <li><a href="our-story.html">Our Story</a></li>
                     <li><a href="our-partner.html">Our Partners</a></li>
                     <li class="header-buttons-li">
-                        <div class="header-buttons ">
+                        <div class="header-buttons">
                             <a href="contact.html" class="btn-demo">Contact Us</a>
                             <a href="https://crm.wealthempires.in/" class="btn-primary" style="color: white;">Start
                                 Incorporation</a>
@@ -2132,7 +2132,7 @@
 
     <!-- Testimonial Section -->
     <section class="testimonial-hero-section " style="padding: 60px 0; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
-        <div class="containers-testiminial" style="max-width: 600rem!important; margin: 0 auto; padding: 0 20px;">
+        <div class="containers-testiminial" style="max-width: 1400px !important; margin: 0 auto; padding: 0 30px;">
             <!-- Header with Awards -->
             <section class="testimonial-hero-section">
                 <div class="containers-testimonial">
@@ -2237,7 +2237,7 @@
                         /* Mobile */
                         @media (max-width: 768px) {
                         .testimonial-hero-section {
-                            margin: 16px 12px 0 12px;
+                            /* margin: 16px 12px 0 12px; */
                             padding: 32px 0;
                         }
 
@@ -2510,8 +2510,17 @@
         .shift-right {
             transform: translateX(100px);
         }
+        .containers-testiminial,
+.containers-testimonial {
+    padding: 0 12px;
+}
 
         @media (max-width: 768px) {
+            .containers-testiminial,
+            .containers-testimonial {
+                padding: 0 16px;
+                transform: translate(-1rem);
+            }
             .testimonial-grid {
                 flex-direction: column;
                 gap: 25px;
@@ -2626,6 +2635,43 @@
                 font-size: 18px;
             }
         }
+        /* --- FIX: Prevent horizontal overflow --- */
+body, html,
+.testimonial-hero-section,
+.containers-testiminial,
+.containers-testimonial,
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Allow cards to wrap so no horizontal scrolling occurs */
+.testimonial-grid {
+    flex-wrap: wrap !important;
+}
+
+/* Prevent shift animation from pushing cards out of screen */
+.shift-left,
+.shift-right {
+    transform: translateX(0) !important;
+}
+
+/* Ensure expanded card never exceeds screen width */
+.customer-card.active {
+    max-width: 100% !important;
+}
+
+/* Fix image pushing width */
+.person-img {
+    max-width: 100% !important;
+}
+
+/* Prevent nested sections from creating extra width */
+.testimonial-hero-section section {
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
     </style>
     
 
@@ -2634,6 +2680,7 @@
 
         
     </section>
+    
 
      <!-- CTA Section (centered dark hero) -->
     <!-- <section class="cta-hero-section" style="margin: 82px; border-radius: 28px; position: relative; overflow: hidden; background: #0f1724; color: #fff;">
