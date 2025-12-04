@@ -1529,8 +1529,12 @@
 
                 <div class="footer-right">
                     <div class="copyright">
-                        Copyright © 2025 Wealth Empires Inc.
+                        Copyright © <span id="year"></span> Wealth Empires Inc.
                     </div>
+
+                    <script>
+                        document.getElementById("year").textContent = new Date().getFullYear();
+                    </script>
                     <div class="social-links">
                         <a href="https://x.com/wewealthempires" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.linkedin.com/company/wealthempires" aria-label="LinkedIn"><i
