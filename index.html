@@ -2717,12 +2717,18 @@
         /* Disable clicking on cards for mobile */
         @media (max-width: 768px) {
             .customer-card {
-                pointer-events: none !important;
                 background:
                     linear-gradient(to bottom, rgb(255, 255, 255), #7951a94d) !important;
                 
             }
-
+            
+            
+        }
+        @media (max-width: 768px) {
+        .customer-card,
+        .customer-card * {
+            pointer-events: none !important;
+            }
         }
 
 
