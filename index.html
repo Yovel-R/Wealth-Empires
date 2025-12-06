@@ -2249,6 +2249,9 @@
 
                         /* Mobile */
                         @media (max-width: 768px) {
+                        .testimonial-title{
+                            margin-bottom: 0px;
+                        }
                         .testimonial-hero-section {
                             /* margin: 16px 12px 0 12px; */
                             padding: 32px 0;
@@ -2582,8 +2585,12 @@
 
 
         @media (max-width: 768px) {
+
             .testimonial-hero-section{
                 margin-top: -2rem;
+            }
+            .testimonial-grid{
+                margin-top: -1rem;
             }
             .containers-testiminial,
             .containers-testimonial {
@@ -2704,8 +2711,19 @@
             .testimonial-text {
                 font-size: 18px;
             }
+            
         }
+        
+        /* Disable clicking on cards for mobile */
+        @media (max-width: 768px) {
+            .customer-card {
+                pointer-events: none !important;
+                background:
+                    linear-gradient(to bottom, rgb(255, 255, 255), #7951a94d) !important;
+                
+            }
 
+        }
 
 
         /* --- FIX: Prevent horizontal overflow --- */
@@ -2751,7 +2769,6 @@ body, html,
     transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Optional: even smaller shrink on large screens for better spacing */
 @media (min-width: 1200px) {
     .customer-card:not(.active) {
         width: 160px;
