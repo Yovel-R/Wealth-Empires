@@ -381,7 +381,7 @@
                 <div class="logo">
                     <a href="index.html"
                         style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
-                        <img src="Wealth Empires.jpg" alt="Wealth Empires Logo"
+                        <img src="Wealth Empires.webp" alt="Wealth Empires Logo"
                             style="height: 48px; width: auto; border-radius: 8px;">
                         <div class="logo-text">Wealth Empires</div>
                     </a>
@@ -880,23 +880,23 @@
                     <div class="testimonial-header">
                     <div class="awards-container">
                         <div class="award-badge">
-                        <img src="img/was2.jpg" alt="Award Badge 1">
+                        <img src="img/was2.webp" alt="Award Badge 1">
                         </div>
                         <div class="award-badge">
-                        <img src="img/was1.jpg" alt="Award Badge 2">
+                        <img src="img/was1.webp" alt="Award Badge 2">
                         </div>
                         <div class="award-badge">
-                        <img src="img/was.jpg" alt="Award Badge 3">
+                        <img src="img/was.webp" alt="Award Badge 3">
                         </div>
                         <div class="award-badge">
-                        <img src="img/b1as.png" alt="Award Badge 4">
+                        <img src="img/b1as.webp" alt="Award Badge 4">
                         </div>
                     </div>
 
-                    <h1 class="testimonial-title">
+                    <h2 style="font-size: 2.5rem; font-weight: 700; margin: 0; padding: 0; line-height: 1.2;" class="testimonial-title">
                         <span class="purple">Superheroes</span> <span>who</span><br>
                         <span>trust</span> <span>WealthEmpires</span>
-                    </h1>
+                    </h2>
                     </div>
                 </div>
                 </section>
@@ -983,6 +983,9 @@
 
                         /* Mobile */
                         @media (max-width: 768px) {
+                        .testimonial-title{
+                            margin-bottom: 0px;
+                        }
                         .testimonial-hero-section {
                             /* margin: 16px 12px 0 12px; */
                             padding: 32px 0;
@@ -1029,7 +1032,7 @@
                 <div class="customer-card" data-testimonial="1">
                     <div class="card-expanded-layout">
                         <img class="person-img"
-                            src="img/person 4.png"
+                            src="img/person 4.webp"
                             alt="Testimonial Person">
 
                         <div class="right-content">
@@ -1051,7 +1054,7 @@
                 <div class="customer-card" data-testimonial="2">
                     <div class="card-expanded-layout">
                         <img class="person-img"
-                            src="img/person 2.png"
+                            src="img/person 2.webp"
                             alt="Testimonial Person">
 
                         <div class="right-content">
@@ -1070,7 +1073,7 @@
                 <div class="customer-card" data-testimonial="2">
                     <div class="card-expanded-layout">
                         <img class="person-img"
-                            src="img/person 1.png"
+                            src="img/person 1.webp"
                             alt="Testimonial Person">
 
                         <div class="right-content">
@@ -1090,7 +1093,7 @@
                 <div class="customer-card" data-testimonial="3">
                     <div class="card-expanded-layout">
                         <img class="person-img"
-                            src="img/person 3.png"
+                            src="img/person 3.webp"
                             alt="Testimonial Person">
 
                         <div class="right-content">
@@ -1184,7 +1187,7 @@
     position: absolute;
     inset: 0;
 
-    background-image: url('img/pops.png');
+    background-image: url('img/pops.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 300px;
@@ -1316,6 +1319,13 @@
 
 
         @media (max-width: 768px) {
+
+            .testimonial-hero-section{
+                margin-top: -2rem;
+            }
+            .testimonial-grid{
+                margin-top: -1rem;
+            }
             .containers-testiminial,
             .containers-testimonial {
                 padding: 0 16px;
@@ -1435,8 +1445,25 @@
             .testimonial-text {
                 font-size: 18px;
             }
+            
         }
-
+        
+        /* Disable clicking on cards for mobile */
+        @media (max-width: 768px) {
+            .customer-card {
+                background:
+                    linear-gradient(to bottom, rgb(255, 255, 255), #7951a94d) !important;
+                
+            }
+            
+            
+        }
+        @media (max-width: 768px) {
+        .customer-card,
+        .customer-card * {
+            pointer-events: none !important;
+            }
+        }
 
 
         /* --- FIX: Prevent horizontal overflow --- */
@@ -1482,7 +1509,6 @@ body, html,
     transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Optional: even smaller shrink on large screens for better spacing */
 @media (min-width: 1200px) {
     .customer-card:not(.active) {
         width: 160px;
@@ -1525,6 +1551,8 @@ body, html,
 
         
     </section>
+    
+
 
     <section style="background: #ffffff; padding: 0px;">
         <div class="container">
@@ -1939,7 +1967,7 @@ body, html,
         <div class="footer-header">
             <div class="footer-header-content">
                 <div class="logo-section">
-                    <img src="Wealth Empires.jpg" alt="Wealth Empires" class="footer-logo">
+                    <img src="Wealth Empires.webp" alt="Wealth Empires" class="footer-logo">
                 </div>
                 <div class="header-divider">
                     <div class="contact-section">
