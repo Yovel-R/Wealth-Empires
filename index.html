@@ -1646,7 +1646,14 @@
     </section>
 
     <!-- Services Section (Modern Tailwind) -->
-    <section class="py-4 lg:py-2 bg-white">
+     <style>
+        @media (max-width: 768px) {
+            .margin-fix{
+                margin-top: -5rem !important;
+            }
+        }
+     </style>
+    <section class="py-4 lg:py-2 bg-white margin-fix">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Premium Single-Color Header Design -->
             <div class="relative overflow-hidden rounded-3xl mb-12" style="background: linear-gradient(135deg, #fff 0%, rgba(13,61,61,0.05) 100%);">
