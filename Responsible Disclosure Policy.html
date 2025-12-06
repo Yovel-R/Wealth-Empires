@@ -867,6 +867,37 @@
     }
 
         </style>
+        <style>
+            .header-divider {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            /* Tablet */
+            @media (max-width: 768px) {
+                .header-divider {
+                    flex-direction: column;
+                    gap: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+
+            /* Mobile */
+            @media (max-width: 480px) {
+                .header-divider {
+                    gap: 8px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+
+
+        </style>
 
         <div class="footer-content">
             <div class="footer-column">

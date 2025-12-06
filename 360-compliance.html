@@ -162,7 +162,7 @@
         /* Mobile Styles */
         @media (max-width: 768px) {
 .hero-section {
-                padding: 150px 20px 40px 20px;
+                padding: 150px 20px 0px 20px;
                 min-height: auto;
             }
 
@@ -358,7 +358,7 @@
         @media (max-width: 768px) {
             body { overflow-x: hidden; }
             .container { padding: 0 16px; max-width: 100%; }
-            .hero-section { padding: 80px 16px 40px 16px; }
+            .hero-section { padding: 80px 16px 0px 16px; }
             .hero-content { grid-template-columns: 1fr; gap: 28px; }
             .hero-left h1 { font-size: 34px; text-align: center; }
             .hero-left p { font-size: 16px; text-align: center; max-width: 100%; }
@@ -485,6 +485,14 @@
             </div>
         </div>
         </div>
+        <style>
+            @media (max-width: 768px) {
+                .hero-left {
+                    margin-left: 0 !important;
+                }
+            }
+
+        </style>
     </section>
 
     <!-- Annual Compliance Package Section -->
@@ -1023,35 +1031,44 @@
                         <a href="tel:+919884521264" class="support-email">+91 9884521264</a>
                     </div>
                     <div class="mail-support" style="transform: translateY(-1px) !important;">
-                        <a href="mailto:support@wealthempires.in" class="support-email">
+                        <a href="mailto:support@wealthempires.in" class="support-email" >
                             support@wealthempires.in
                         </a>
                     </div>
                 </div>
+                
+
             </div>
         </div>
         <style>
+            .header-divider {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            /* Tablet */
+            @media (max-width: 768px) {
                 .header-divider {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 20px;
+                    flex-direction: column;
+                    gap: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
                 }
+            }
 
-    /* Tablet and smaller */
-    @media (max-width: 768px) {
-        .header-divider {
-            flex-direction: column;
-            gap: 12px;
-        }
-    }
+            /* Mobile */
+            @media (max-width: 480px) {
+                .header-divider {
+                    gap: 8px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
 
-    /* Mobile */
-    @media (max-width: 480px) {
-        .header-divider {
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-    }
 
         </style>
 

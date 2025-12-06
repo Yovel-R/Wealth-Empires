@@ -857,6 +857,22 @@
                 </div>
             </div>
         </div>
+        <style>
+            .modern-contact-card {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-content {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            .contact-actions {
+                margin-top: auto !important;  /* Push buttons to bottom */
+            }
+        </style>
     </section>
 
     <!-- Visit Our Office Section -->
@@ -2052,6 +2068,7 @@
             </div>
         </div>
         <style>
+            
             .mail-support{
             
             padding-left: 1rem;
@@ -2102,6 +2119,37 @@
 }
 
 
+
+
+        </style>
+        <style>
+            .header-divider {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            /* Tablet */
+            @media (max-width: 768px) {
+                .header-divider {
+                    flex-direction: column;
+                    gap: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+
+            /* Mobile */
+            @media (max-width: 480px) {
+                .header-divider {
+                    gap: 8px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
 
 
         </style>

@@ -205,7 +205,7 @@
             font-size: 58px;
             line-height: 1.1;
             color: #1a1a1a;
-            margin-bottom: 80px;
+            margin-bottom: 30px;
             font-weight: 400;
             letter-spacing: -1.5px;
         }
@@ -339,7 +339,7 @@
 
             .main-heading {
                 font-size: 52px;
-                margin-bottom: 60px;
+                margin-bottom: 20px;
             }
         }
 
@@ -1219,7 +1219,7 @@
 
         <h1 class="main-heading">Made in Chennai, built for the world.</h1>
 
-        <p class="description" style="margin-top: -47px;">What if legal, accounting, and compliance became simple, affordable, and transparent for
+        <p class="description" style="margin-top: 0px;">What if legal, accounting, and compliance became simple, affordable, and transparent for
             every entrepreneur so they can focus on building their dream?</p>
     </section>
 
@@ -1455,30 +1455,30 @@
             <div class="impact-cards">
                 <div class="impact-card c-1">
                     <div class="impact-number">3.5x</div>
-                    <div class="impact-sub">higher profitability</div>
+                    <div class="impact-sub">higher profitability <br><br></div>
                     <p class="impact-quote">“Wealth Empires transformed our compliance and taxation into a strategic advantage—giving us clarity, confidence, and measurable growth.”</p>
-                    <div class="impact-author">Paco Lebron, ProdigyTeks</div>
+                    <div class="impact-author">Dr. Sam Paul, Slam</div>
                 </div>
 
                 <div class="impact-card c-2">
                     <div class="impact-number">2x</div>
-                    <div class="impact-sub">faster critical ticket resolution</div>
+                    <div class="impact-sub">increase in issue resolution speed</div>
                     <p class="impact-quote">“With Wealth Empires managing our deadlines, filings, and documentation, we finally found the peace of mind every business owner deserves.”</p>
-                    <div class="impact-author">Matthew Fenton, Selectgroup</div>
+                    <div class="impact-author">Balaji Rajendran, Softrate</div>
                 </div>
 
                 <div class="impact-card c-3">
                     <div class="impact-number">300%</div>
-                    <div class="impact-sub">higher operational efficiency</div>
+                    <div class="impact-sub">improvement in operational efficiency</div>
                     <p class="impact-quote">“Their tech-driven compliance system streamlined everything—no delays, no penalties, no confusion. Just smooth, efficient operations.”</p>
-                    <div class="impact-author">Jordan Boden, OneIT Solutions</div>
+                    <div class="impact-author">Saravanan, SPE Jewellery</div>
                 </div>
 
                 <div class="impact-card c-4">
                     <div class="impact-number">30%</div>
-                    <div class="impact-sub">increase in billable revenue</div>
+                    <div class="impact-sub">growth in billable revenue <br><br></div>
                     <p class="impact-quote">“Ever since Wealth Empires took over our compliance and accounting, our revenue tracking, billing accuracy, and financial stability skyrocketed.”</p>
-                    <div class="impact-author">Chris Miller, Cpak Solutions</div>
+                    <div class="impact-author">A.M. Samsu Ali, Chennai Mobiles</div>
                 </div>
             </div>
         </div>
@@ -1762,27 +1762,34 @@
             </div>
         </div>
         <style>
+            .header-divider {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            /* Tablet */
+            @media (max-width: 768px) {
                 .header-divider {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 20px;
+                    flex-direction: column;
+                    gap: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
                 }
+            }
 
-    /* Tablet and smaller */
-    @media (max-width: 768px) {
-        .header-divider {
-            flex-direction: column;
-            gap: 12px;
-        }
-    }
+            /* Mobile */
+            @media (max-width: 480px) {
+                .header-divider {
+                    gap: 8px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
 
-    /* Mobile */
-    @media (max-width: 480px) {
-        .header-divider {
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-    }
 
         </style>
 
